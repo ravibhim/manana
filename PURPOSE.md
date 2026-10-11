@@ -1,6 +1,8 @@
-# LearnAdvait (working title)
+# Manana
 
 A personal tool for learning Advaita Vedanta through its texts, starting with *Drg-Drsya Viveka* (DDV).
+
+The name is *manana*, reflection: the second stage of Vedanta study after hearing the teacher (*sravana*).
 
 ## Why
 
@@ -46,4 +48,4 @@ Working prototype of the verse screen for verse 1 with real recitation and comme
 
 **Data model:** deliberately simple. Verses live in one file (`src/data/ddv.ts`). Each audio clip records the YouTube video and start/end times it was cut from, so it can be re-cut. Audio files live in `public/audio/` and ship with the app: no database and no storage service. Listening position is kept in the browser.
 
-**Not decided yet:** the curation experience (laptop only), how to deploy the audio, the product name.
+**Not decided yet:** the curation experience (laptop only) and how to deploy the audio.
