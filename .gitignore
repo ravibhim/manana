@@ -24,6 +24,5 @@ dist-ssr
 *.sw?
 .env
 
-# Source media, kept local (large / third-party content)
+# Source media, kept local (third-party content)
 DDV.pdf
-public/audio/*.mp3
