@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+html, body {
+  margin: 0;
+  background: #faf7f2;
+  color: #3d2b1f;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root { min-height: 100dvh; }
+
+.reader { user-select: none; -webkit-user-select: none; }
+
+.devanagari { font-family: 'Noto Serif Devanagari', 'Devanagari Sangam MN', serif; }
