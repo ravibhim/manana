@@ -17,7 +17,7 @@ A new learning format that is convenient, easy and holistic. The unit is a **ver
 - **See it**: the verse at the center of the screen, calm and minimal, with the focus on the text
 - **Hear it**: the Swami's recitation, a short clip (about 30 seconds) cut from his YouTube lecture
 - **Unpack it**: tap a word to see its meaning
-- **Understand it**: the translation and the book's own notes, taken from the PDF
+- **Understand it**: the translation, taken from the PDF
 - **Listen to the Swami explain it**: the commentary for the verse, which can run many minutes, listened to passively. This is what makes learning relaxed.
 - **Recite along**: with the Swami's recitation
 
@@ -44,6 +44,6 @@ YouSing (devotional songs, shelved) taught us what works: text at the center, ta
 
 Working prototype of the verse screen for verse 1 with real recitation and commentary audio, tested with the screen locked. Verse 2 has text only.
 
-**Not decided yet:** the data model, the curation experience, how to host the audio, the product name.
+**Data model:** deliberately simple. Verses live in one file (`src/data/ddv.ts`). Each audio clip records the YouTube video and start/end times it was cut from, so it can be re-cut. Audio files live in `public/audio/` and ship with the app: no database and no storage service. Listening position is kept in the browser.
 
-**Dormant:** `supabase/`, `src/components/CurateView.tsx` and the dev-only `/api/clip` endpoint in `vite.config.ts` came from an early attempt at the data layer and are not used by the app.
+**Not decided yet:** the curation experience (laptop only), how to deploy the audio, the product name.

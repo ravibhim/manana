@@ -14,14 +14,13 @@ interface VerseScreenProps {
 export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseScreenProps) {
   const verse = VERSES.find(v => v.number === verseNumber)!
   const title = `${BOOK.title} · Verse ${verse.number}`
-  const recitation = useAudioPlayer(verse.recitationSrc, { title: `${title} — Recitation`, artist: BOOK.author })
-  const commentary = useAudioPlayer(verse.commentarySrc, {
+  const recitation = useAudioPlayer(verse.recitation?.src, { title: `${title} — Recitation`, artist: BOOK.author })
+  const commentary = useAudioPlayer(verse.commentary?.src, {
     title: `${title} — Commentary`,
     artist: 'Swami',
     resumeKey: `la-resume-ddv-${verse.number}-commentary`,
   })
   const [activeWord, setActiveWord] = useState<{ t: string; m: string } | null>(null)
-  const [showNotes, setShowNotes] = useState(false)
   const [showRoman, setShowRoman] = useState(true)
   const [expanded, setExpanded] = useState(false)
 
@@ -97,7 +96,7 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
       </button>
 
       {/* Recitation */}
-      {verse.recitationSrc && <section className="mt-8 flex items-center gap-4 rounded-2xl bg-[#f0e6d4]/60 px-5 py-4">
+      {verse.recitation && <section className="mt-8 flex items-center gap-4 rounded-2xl bg-[#f0e6d4]/60 px-5 py-4">
         <PlayPauseButton player={recitation} label="recitation" />
         <div className="min-w-0 flex-1">
           <p className="font-medium">Recitation</p>
@@ -109,19 +108,10 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
       <section className="mt-10">
         <h2 className="text-xs tracking-widest text-[#8b6914] uppercase">Meaning</h2>
         <p className="mt-3 text-[1.0625rem] leading-7">{verse.translation}</p>
-
-        <button onClick={() => setShowNotes(!showNotes)} className="mt-4 text-sm text-[#8b6914] active:opacity-50">
-          {showNotes ? 'Hide notes' : 'Notes from the book'}
-        </button>
-        {showNotes && (
-          <ul className="mt-3 space-y-3 text-[0.9375rem] leading-6 text-[#3d2b1f]/80">
-            {verse.notes.map((n, i) => <li key={i}>{n}</li>)}
-          </ul>
-        )}
       </section>
 
       {/* Commentary */}
-      {verse.commentarySrc && <section className="mt-12 rounded-2xl bg-[#3d2b1f] px-5 py-5 text-[#faf7f2]">
+      {verse.commentary && <section className="mt-12 rounded-2xl bg-[#3d2b1f] px-5 py-5 text-[#faf7f2]">
         <div className="flex items-center gap-4">
           <button
             onClick={commentary.toggle}
