@@ -477,6 +477,8 @@ export const VERSES: Verse[] = [
       'ahaṃkārasya tādātmyaṃ cic-chāyā-deha-sākṣibhiḥ |\nsahajaṃ karmajaṃ bhrāntijanyaṃ ca trividhaṃ kramāt || 8 ||',
     translation:
       'The identification of the ego with the reflection of Consciousness, the body and the Witness are of three kinds, namely, natural, due to (past) Karma, and due to ignorance, respectively.',
+    recitation: { src: '/audio/ddv-8-recitation.mp3', videoId: 'Bxvc4eL3tag', start: 2076, end: 2107 },
+    commentary: { src: '/audio/ddv-8-commentary.mp3', videoId: 'Bxvc4eL3tag', start: 2107, end: 2745 },
   },
   {
     number: 9,
@@ -536,6 +538,8 @@ export const VERSES: Verse[] = [
       'saṃbandhinos sator nāsti nivṛttis sahajasya tu |\nkarma-kṣayāt prabodhāc ca nivartete kramād ubhe || 9 ||',
     translation:
       'The mutual identification of the ego and the reflection of Consciousness, which is natural, does not cease so long as they are taken to be real. The other two identifications disappear after the wearing out of the result of Karma and the attainment of the knowledge of the highest Reality respectively.',
+    recitation: { src: '/audio/ddv-9-recitation.mp3', videoId: 'Bxvc4eL3tag', start: 2746, end: 2775 },
+    commentary: { src: '/audio/ddv-9-commentary.mp3', videoId: 'Bxvc4eL3tag', start: 2776, end: 3344 },
   },
   {
     number: 10,
