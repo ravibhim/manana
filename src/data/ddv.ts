@@ -414,6 +414,8 @@ export const VERSES: Verse[] = [
       'chāyāhaṃkārayor aikyaṃ taptāyaḥ-piṇḍavan mataṃ |\ntad-ahaṃkāra-tādātmyād dehaś cetanatām agāt || 7 ||',
     translation:
       'In the opinion of the wise, the identity of the reflection (of Consciousness) and of ego is like the identity of the fire and the (heated) iron ball. The body having been identified with the ego (which has already identified itself with the reflection of Consciousness) passes for a conscious entity.',
+    recitation: { src: '/audio/ddv-7-recitation.mp3', videoId: 'Bxvc4eL3tag', start: 1628, end: 1659 },
+    commentary: { src: '/audio/ddv-7-commentary.mp3', videoId: 'Bxvc4eL3tag', start: 1659, end: 2064 },
   },
   {
     number: 8,
