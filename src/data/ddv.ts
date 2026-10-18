@@ -7,6 +7,8 @@ export interface Token {
   t: string
   /** Meaning shown when the word is tapped. Omitted for punctuation. */
   m?: string
+  /** Optional breakdown of a compound into its component words (split forms, so they may differ from the joined text). */
+  parts?: { t: string; m: string }[]
 }
 
 /** An audio clip cut from a YouTube lecture. The source is kept so the clip can be re-cut. */
@@ -50,7 +52,16 @@ export const VERSES: Verse[] = [
         { t: '।' },
       ],
       [
-        { t: 'दृश्याधीवृत्तयस्साक्षी', m: 'the mind’s modifications are perceived; the Witness' },
+        {
+          t: 'दृश्याधीवृत्तयस्साक्षी',
+          m: 'the mind’s modifications are perceived; the Witness',
+          parts: [
+            { t: 'दृश्याः', m: 'are perceived' },
+            { t: 'धी', m: 'of the mind' },
+            { t: 'वृत्तयः', m: 'modifications' },
+            { t: 'साक्षी', m: 'the Witness' },
+          ],
+        },
         { t: 'दृगेव', m: 'verily the perceiver' },
         { t: 'न', m: 'is not' },
         { t: 'तु', m: 'but' },
@@ -69,14 +80,41 @@ export const VERSES: Verse[] = [
     number: 2,
     lines: [
       [
-        { t: 'नीलपीतस्थूलसूक्ष्मह्रस्वदीर्घादि', m: 'blue, yellow, gross, subtle, short, long, etc.' },
+        {
+          t: 'नीलपीतस्थूलसूक्ष्मह्रस्वदीर्घादि',
+          m: 'blue, yellow, gross, subtle, short, long, etc.',
+          parts: [
+            { t: 'नील', m: 'blue' },
+            { t: 'पीत', m: 'yellow' },
+            { t: 'स्थूल', m: 'gross' },
+            { t: 'सूक्ष्म', m: 'subtle' },
+            { t: 'ह्रस्व', m: 'short' },
+            { t: 'दीर्घ', m: 'long' },
+            { t: 'आदि', m: 'etc.' },
+          ],
+        },
         { t: 'भेदतः', m: 'on account of such distinctions' },
         { t: '।' },
       ],
       [
-        { t: 'नानाविधानि', m: 'various' },
+        {
+          t: 'नानाविधानि',
+          m: 'various',
+          parts: [
+            { t: 'नाना', m: 'various' },
+            { t: 'विधानि', m: 'kinds' },
+          ],
+        },
         { t: 'रूपाणि', m: 'forms' },
-        { t: 'पश्येल्लोचनमेकधा', m: 'the eye perceives as one' },
+        {
+          t: 'पश्येल्लोचनमेकधा',
+          m: 'the eye perceives as one',
+          parts: [
+            { t: 'पश्येत्', m: 'perceives' },
+            { t: 'लोचनम्', m: 'the eye' },
+            { t: 'एकधा', m: 'as one' },
+          ],
+        },
         { t: '॥ २ ॥' },
       ],
     ],
@@ -91,15 +129,59 @@ export const VERSES: Verse[] = [
     number: 3,
     lines: [
       [
-        { t: 'आन्ध्यमान्द्यपटुत्वेषु', m: 'blindness, dullness and sharpness' },
-        { t: 'नेत्रधर्मेषु', m: 'characteristics of the eye' },
-        { t: 'चैकधा', m: 'also, as a unity' },
+        {
+          t: 'आन्ध्यमान्द्यपटुत्वेषु',
+          m: 'blindness, dullness and sharpness',
+          parts: [
+            { t: 'आन्ध्य', m: 'blindness' },
+            { t: 'मान्द्य', m: 'dullness' },
+            { t: 'पटुत्वेषु', m: 'in sharpness' },
+          ],
+        },
+        {
+          t: 'नेत्रधर्मेषु',
+          m: 'characteristics of the eye',
+          parts: [
+            { t: 'नेत्र', m: 'of the eye' },
+            { t: 'धर्मेषु', m: 'characteristics' },
+          ],
+        },
+        {
+          t: 'चैकधा',
+          m: 'also, as a unity',
+          parts: [
+            { t: 'च', m: 'also' },
+            { t: 'एकधा', m: 'as a unity' },
+          ],
+        },
         { t: '।' },
       ],
       [
-        { t: 'संकल्पयेन्मनः', m: 'the mind cognizes' },
-        { t: 'श्रोत्रत्वगादौ', m: 'to ears, skin, etc.' },
-        { t: 'योज्यतामिदम्', m: 'this applies' },
+        {
+          t: 'संकल्पयेन्मनः',
+          m: 'the mind cognizes',
+          parts: [
+            { t: 'संकल्पयेत्', m: 'cognizes' },
+            { t: 'मनः', m: 'the mind' },
+          ],
+        },
+        {
+          t: 'श्रोत्रत्वगादौ',
+          m: 'to ears, skin, etc.',
+          parts: [
+            { t: 'श्रोत्र', m: 'ear' },
+            { t: 'त्वक्', m: 'skin' },
+            { t: 'आदौ', m: 'etc.' },
+          ],
+        },
+        {
+          t: 'योज्यतामिदम्',
+          m: 'this applies',
+          parts: [
+            { t: 'योज्यताम्', m: 'let it be applied' },
+            { t: 'इदम्', m: 'this' },
+          ],
+        },
         { t: '॥ ३ ॥' },
       ],
     ],
@@ -115,14 +197,53 @@ export const VERSES: Verse[] = [
     lines: [
       [
         { t: 'कामः', m: 'desire' },
-        { t: 'संकल्पसंदेहौ', m: 'determination and doubt' },
-        { t: 'श्रद्धाश्रद्धे', m: 'faith and want of faith' },
-        { t: 'धृतीतरे', m: 'steadiness and its opposite' },
+        {
+          t: 'संकल्पसंदेहौ',
+          m: 'determination and doubt',
+          parts: [
+            { t: 'संकल्प', m: 'determination' },
+            { t: 'संदेहौ', m: 'and doubt' },
+          ],
+        },
+        {
+          t: 'श्रद्धाश्रद्धे',
+          m: 'faith and want of faith',
+          parts: [
+            { t: 'श्रद्धा', m: 'faith' },
+            { t: 'अश्रद्धे', m: 'and want of faith' },
+          ],
+        },
+        {
+          t: 'धृतीतरे',
+          m: 'steadiness and its opposite',
+          parts: [
+            { t: 'धृति', m: 'steadiness' },
+            { t: 'इतरे', m: 'and its opposite' },
+          ],
+        },
         { t: '।' },
       ],
       [
-        { t: 'ह्रीर्धीर्भीरित्येवमादीन्', m: 'modesty, understanding, fear and such others' },
-        { t: 'भासयेत्येकधा', m: 'illumines, unified' },
+        {
+          t: 'ह्रीर्धीर्भीरित्येवमादीन्',
+          m: 'modesty, understanding, fear and such others',
+          parts: [
+            { t: 'ह्रीः', m: 'modesty' },
+            { t: 'धीः', m: 'understanding' },
+            { t: 'भीः', m: 'fear' },
+            { t: 'इति', m: 'thus' },
+            { t: 'एवमादीन्', m: 'and such others' },
+          ],
+        },
+        {
+          t: 'भासयेत्येकधा',
+          m: 'illumines, unified',
+          parts: [
+            { t: 'भासयेत्', m: 'illumines' },
+            { t: 'इति', m: '(quotation marker)' },
+            { t: 'एकधा', m: 'unified' },
+          ],
+        },
         { t: 'चितिः', m: 'Consciousness' },
         { t: '॥ ४ ॥' },
       ],
@@ -138,8 +259,24 @@ export const VERSES: Verse[] = [
     number: 5,
     lines: [
       [
-        { t: 'नोदेति', m: 'does not rise' },
-        { t: 'नास्तमेत्येषा', m: 'this (Consciousness) does not set' },
+        {
+          t: 'नोदेति',
+          m: 'does not rise',
+          parts: [
+            { t: 'न', m: 'not' },
+            { t: 'उदेति', m: 'rises' },
+          ],
+        },
+        {
+          t: 'नास्तमेत्येषा',
+          m: 'this (Consciousness) does not set',
+          parts: [
+            { t: 'न', m: 'not' },
+            { t: 'अस्तम्', m: 'setting' },
+            { t: 'एति', m: 'goes to' },
+            { t: 'एषा', m: 'this (Consciousness)' },
+          ],
+        },
         { t: 'न', m: 'not' },
         { t: 'वृद्धिं', m: 'increase' },
         { t: 'याति', m: 'undergoes' },
@@ -149,8 +286,23 @@ export const VERSES: Verse[] = [
       ],
       [
         { t: 'स्वयं', m: 'of itself' },
-        { t: 'विभात्यथान्यानि', m: 'shines; on the other hand, other objects' },
-        { t: 'भासयेत्साधनं', m: 'illumines, aid (of other means)' },
+        {
+          t: 'विभात्यथान्यानि',
+          m: 'shines; on the other hand, other objects',
+          parts: [
+            { t: 'विभाति', m: 'shines' },
+            { t: 'अथ', m: 'on the other hand' },
+            { t: 'अन्यानि', m: 'other objects' },
+          ],
+        },
+        {
+          t: 'भासयेत्साधनं',
+          m: 'illumines, aid (of other means)',
+          parts: [
+            { t: 'भासयेत्', m: 'illumines' },
+            { t: 'साधनम्', m: 'aid (of other means)' },
+          ],
+        },
         { t: 'विना', m: 'without' },
         { t: '॥ ५ ॥' },
       ],

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BOOK, VERSES } from '../data/ddv'
+import { BOOK, VERSES, type Token } from '../data/ddv'
 import { useAudioPlayer } from '../hooks/useAudioPlayer'
 import { formatTime } from '../lib/time'
 import NowPlaying from './NowPlaying'
@@ -20,7 +20,7 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
     artist: 'Swami',
     resumeKey: `la-resume-ddv-${verse.number}-commentary`,
   })
-  const [activeWord, setActiveWord] = useState<{ t: string; m: string } | null>(null)
+  const [activeWord, setActiveWord] = useState<Token | null>(null)
   const [showRoman, setShowRoman] = useState(true)
   const [expanded, setExpanded] = useState(false)
 
@@ -51,7 +51,7 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
                 tok.m ? (
                   <button
                     key={ti}
-                    onClick={() => setActiveWord(activeWord?.t === tok.t ? null : { t: tok.t, m: tok.m! })}
+                    onClick={() => setActiveWord(activeWord?.t === tok.t ? null : tok)}
                     className={`mx-[0.15em] rounded px-1 ${
                       activeWord?.t === tok.t
                         ? 'bg-[#8b6914]/20'
@@ -76,8 +76,21 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
       </section>
 
       {/* Word meaning slot: fixed height so the page doesn't jump */}
-      <div className="mt-6 flex h-16 items-center justify-center text-center">
-        {activeWord ? (
+      <div className="mt-6 flex min-h-16 items-center justify-center text-center">
+        {activeWord?.parts ? (
+          <div className="text-[1.0625rem] leading-6">
+            <p className="mb-2 text-[#3d2b1f]/70">{activeWord.m}</p>
+            <ul className="flex flex-wrap justify-center gap-x-5 gap-y-1">
+              {activeWord.parts.map((p, i) => (
+                <li key={i}>
+                  <span className="devanagari text-[1.25rem]">{p.t}</span>
+                  <span className="mx-1.5 text-[#3d2b1f]/40">—</span>
+                  {p.m}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : activeWord ? (
           <p className="text-[1.0625rem] leading-6">
             <span className="devanagari text-[1.25rem]">{activeWord.t}</span>
             <span className="mx-2 text-[#3d2b1f]/40">—</span>
