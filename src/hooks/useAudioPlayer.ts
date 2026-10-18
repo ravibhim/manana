@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-const SPEEDS = [1, 1.25, 1.5]
-
 // Only one clip plays at a time.
 let current: HTMLAudioElement | null = null
 
@@ -18,7 +16,6 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
   const [time, setTime] = useState(0)
   const [duration, setDuration] = useState(0)
   const [playing, setPlaying] = useState(false)
-  const [speed, setSpeed] = useState(1)
 
   const saveResume = useCallback((t: number) => {
     if (!resumeKey) return
@@ -97,7 +94,6 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
     }
     if (current && current !== audio) current.pause()
     current = audio
-    audio.playbackRate = speed
     audio.play().catch(() => setPlaying(false))
 
     if ('mediaSession' in navigator) {
@@ -107,15 +103,9 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
       navigator.mediaSession.setActionHandler('seekbackward', () => skip(-15))
       navigator.mediaSession.setActionHandler('seekforward', () => skip(15))
     }
-  }, [speed, title, artist, skip])
+  }, [title, artist, skip])
 
-  const cycleSpeed = useCallback(() => {
-    const next = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]
-    setSpeed(next)
-    if (audioRef.current) audioRef.current.playbackRate = next
-  }, [speed])
-
-  return { time, duration, playing, speed, toggle, seek, skip, cycleSpeed }
+  return { time, duration, playing, toggle, seek }
 }
 
 export type Player = ReturnType<typeof useAudioPlayer>
