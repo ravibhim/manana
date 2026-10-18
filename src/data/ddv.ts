@@ -159,6 +159,8 @@ export const VERSES: Verse[] = [
       'nodeti nāstam etyeṣā na vṛddhiṃ yāti na kṣayam |\nsvayaṃ vibhāty athānyāni bhāsayet sādhanaṃ vinā || 5 ||',
     translation:
       'This Consciousness does neither rise nor set. It does not increase; nor does it suffer decay. Being self-luminous, it illumines everything else without any other aid.',
+    recitation: { src: '/audio/ddv-5-recitation.mp3', videoId: 'm6kALQlK6-Q', start: 1425, end: 1456 },
+    commentary: { src: '/audio/ddv-5-commentary.mp3', videoId: 'm6kALQlK6-Q', start: 1457, end: 1931 },
   },
   {
     number: 6,
