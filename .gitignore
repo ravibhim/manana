@@ -27,3 +27,4 @@ dist-ssr
 # Source media, kept local (third-party content)
 DDV.pdf
 .playwright-mcp/
+.cache/

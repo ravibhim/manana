@@ -62,7 +62,7 @@ export const VERSES: Verse[] = [
       'rūpaṃ dṛśyaṃ locanaṃ dṛk tad dṛśyaṃ dṛk tu mānasaṃ |\ndṛśyā dhī-vṛttayaḥ sākṣī dṛg eva na tu dṛśyate || 1 ||',
     translation:
       'The form is perceived and the eye is its perceiver. It (the eye) is perceived and the mind is its perceiver. The mind with its modifications is perceived and the Witness (the Self) is verily the perceiver. But It (the Witness) is not perceived (by any other).',
-    recitation: { src: '/audio/ddv-1-recitation.mp3', videoId: 'jx7O2zDqi6I', start: 757, end: 790 },
+    recitation: { src: '/audio/ddv-1-recitation.mp3', videoId: 'jx7O2zDqi6I', start: 757, end: 789 },
     commentary: { src: '/audio/ddv-1-commentary.mp3', videoId: 'jx7O2zDqi6I', start: 806, end: 2792 },
   },
   {
@@ -84,6 +84,8 @@ export const VERSES: Verse[] = [
       'nīla-pīta-sthūla-sūkṣma-hrasva-dīrghādi bhedataḥ |\nnānā-vidhāni rūpāṇi paśyel locanam ekadhā || 2 ||',
     translation:
       'The forms (objects of perception) appear as various on account of such distinctions as blue, yellow, gross, subtle, short, long etc. The eye, on the other hand, sees them, itself remaining one and the same.',
+    recitation: { src: '/audio/ddv-2-recitation.mp3', videoId: 'm6kALQlK6-Q', start: 564, end: 597 },
+    commentary: { src: '/audio/ddv-2-commentary.mp3', videoId: 'm6kALQlK6-Q', start: 598, end: 741 },
   },
   {
     number: 3,
@@ -105,6 +107,8 @@ export const VERSES: Verse[] = [
       'āndhya-māndya-paṭutveṣu netra-dharmeṣu caikadhā |\nsaṃkalpayen manaḥ śrotra-tvag-ādau yojyatām idam || 3 ||',
     translation:
       'Such characteristics of the eye as blindness, sharpness or dullness, the mind is able to cognize because it is a unity. This also applies to (whatever is perceived through) the ear, skin etc.',
+    recitation: { src: '/audio/ddv-3-recitation.mp3', videoId: 'm6kALQlK6-Q', start: 759, end: 792 },
+    commentary: { src: '/audio/ddv-3-commentary.mp3', videoId: 'm6kALQlK6-Q', start: 793, end: 1033 },
   },
   {
     number: 4,
@@ -127,6 +131,8 @@ export const VERSES: Verse[] = [
       'kāmaḥ saṃkalpa-saṃdehau śraddhā-aśraddhe dhṛti-itare |\nhrīr dhīr bhīr ity evamādīn bhāsayety ekadhā citiḥ || 4 ||',
     translation:
       'Consciousness illumines (such other mental states as) desire, determination and doubt, belief and non-belief, constancy and its opposite, modesty, understanding, fear and others, because it (Consciousness) is a unity.',
+    recitation: { src: '/audio/ddv-4-recitation.mp3', videoId: 'm6kALQlK6-Q', start: 1060, end: 1093 },
+    commentary: { src: '/audio/ddv-4-commentary.mp3', videoId: 'm6kALQlK6-Q', start: 1094, end: 1406 },
   },
   {
     number: 5,
