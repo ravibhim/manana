@@ -21,7 +21,6 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
     resumeKey: `la-resume-ddv-${verse.number}-commentary`,
   })
   const [activeWord, setActiveWord] = useState<Token | null>(null)
-  const [showRoman, setShowRoman] = useState(true)
   const [expanded, setExpanded] = useState(false)
 
   const prev = VERSES.find(v => v.number === verseNumber - 1)
@@ -68,18 +67,16 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
           ))}
         </div>
 
-        {showRoman && (
-          <p className="mt-5 whitespace-pre-line text-[1.0625rem] leading-7 text-[#3d2b1f]/60 italic">
-            {verse.transliteration}
-          </p>
-        )}
+        <p className="mt-5 whitespace-pre-line text-[1.0625rem] leading-7 text-[#3d2b1f]/60 italic">
+          {verse.transliteration}
+        </p>
       </section>
 
-      {/* Word meaning slot: fixed height so the page doesn't jump */}
-      <div className="mt-6 flex min-h-16 items-center justify-center text-center">
-        {activeWord?.parts ? (
+      {/* Word meaning: only takes space once a word is tapped, pushing the content below down */}
+      {activeWord && <div className="mt-6 flex items-center justify-center text-center">
+        {activeWord.parts ? (
           <div className="text-[1.0625rem] leading-6">
-            <p className="mb-2 text-[#3d2b1f]/70">{activeWord.m}</p>
+            <p className="mb-2">{activeWord.m}</p>
             <ul className="flex flex-wrap justify-center gap-x-5 gap-y-1">
               {activeWord.parts.map((p, i) => (
                 <li key={i}>
@@ -90,23 +87,14 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
               ))}
             </ul>
           </div>
-        ) : activeWord ? (
+        ) : (
           <p className="text-[1.0625rem] leading-6">
             <span className="devanagari text-[1.25rem]">{activeWord.t}</span>
             <span className="mx-2 text-[#3d2b1f]/40">—</span>
             {activeWord.m}
           </p>
-        ) : (
-          <p className="text-sm text-[#3d2b1f]/40">Tap an underlined word</p>
         )}
-      </div>
-
-      <button
-        onClick={() => setShowRoman(!showRoman)}
-        className="self-center text-xs text-[#3d2b1f]/40 active:opacity-50"
-      >
-        {showRoman ? 'Hide transliteration' : 'Show transliteration'}
-      </button>
+      </div>}
 
       {/* Recitation */}
       {verse.recitation && <section className="mt-8 flex items-center gap-4 rounded-2xl bg-[#f0e6d4]/60 px-5 py-4">
