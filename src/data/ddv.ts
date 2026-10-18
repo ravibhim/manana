@@ -318,7 +318,15 @@ export const VERSES: Verse[] = [
     number: 6,
     lines: [
       [
-        { t: 'चिच्छायावेशतो', m: 'on account of the entering of the reflection of Consciousness' },
+        {
+          t: 'चिच्छायावेशतो',
+          m: 'on account of the entering of the reflection of Consciousness',
+          parts: [
+            { t: 'चित्', m: 'Consciousness' },
+            { t: 'छाया', m: 'reflection' },
+            { t: 'आवेशतः', m: 'on account of entering' },
+          ],
+        },
         { t: 'बुद्धौ', m: 'in the Buddhi (intelligence)' },
         { t: 'भानं', m: 'appearance (of specific knowledge)' },
         { t: 'धीस्तु', m: 'intelligence, indeed' },
@@ -327,8 +335,24 @@ export const VERSES: Verse[] = [
         { t: '।' },
       ],
       [
-        { t: 'एकाहंकृतिरन्या', m: 'one is egoity, the other' },
-        { t: 'स्यादंतःकरणरूपिणी', m: 'is of the nature of mind (mental faculties)' },
+        {
+          t: 'एकाहंकृतिरन्या',
+          m: 'one is egoity, the other',
+          parts: [
+            { t: 'एका', m: 'one' },
+            { t: 'अहंकृतिः', m: 'egoity' },
+            { t: 'अन्या', m: 'the other' },
+          ],
+        },
+        {
+          t: 'स्यादंतःकरणरूपिणी',
+          m: 'is of the nature of mind (mental faculties)',
+          parts: [
+            { t: 'स्यात्', m: 'is' },
+            { t: 'अन्तःकरण', m: 'mind (inner organ)' },
+            { t: 'रूपिणी', m: 'of the nature of' },
+          ],
+        },
         { t: '॥ ६ ॥' },
       ],
     ],
@@ -336,18 +360,53 @@ export const VERSES: Verse[] = [
       'cic-chāyāveśato buddhau bhānaṃ dhīs tu dvidhā sthitā |\nekāhaṃkṛtir anyā syād antaḥkaraṇa-rūpiṇī || 6 ||',
     translation:
       'Buddhi appears to possess luminosity on account of the reflection of Consciousness in it. Intelligence (Buddhi) is of two kinds. One is designated egoity, the other as mind (antahkarana).',
+    recitation: { src: '/audio/ddv-6-recitation.mp3', videoId: 'Bxvc4eL3tag', start: 750, end: 783 },
+    commentary: { src: '/audio/ddv-6-commentary.mp3', videoId: 'Bxvc4eL3tag', start: 783, end: 1620 },
   },
   {
     number: 7,
     lines: [
       [
-        { t: 'छायाहंकारयोरैक्यं', m: 'identity of the reflection and egoism' },
-        { t: 'तप्तायःपिंडवन्मतं', m: 'is, in the opinion of the wise, like that of fire and the heated iron ball' },
+        {
+          t: 'छायाहंकारयोरैक्यं',
+          m: 'identity of the reflection and egoism',
+          parts: [
+            { t: 'छाया', m: 'reflection' },
+            { t: 'अहंकारयोः', m: 'and egoism, of' },
+            { t: 'ऐक्यं', m: 'identity' },
+          ],
+        },
+        {
+          t: 'तप्तायःपिंडवन्मतं',
+          m: 'is, in the opinion of the wise, like that of fire and the heated iron ball',
+          parts: [
+            { t: 'तप्त', m: 'heated' },
+            { t: 'अयः', m: 'iron' },
+            { t: 'पिण्डवत्', m: 'like a ball' },
+            { t: 'मतम्', m: 'is held (in the opinion of the wise)' },
+          ],
+        },
         { t: '।' },
       ],
       [
-        { t: 'तदहंकारतादात्म्याद्', m: 'owing to identification with that egoism' },
-        { t: 'देहश्चेतनतामगात्', m: 'the body has attained consciousness' },
+        {
+          t: 'तदहंकारतादात्म्याद्',
+          m: 'owing to identification with that egoism',
+          parts: [
+            { t: 'तत्', m: 'that' },
+            { t: 'अहंकार', m: 'egoism' },
+            { t: 'तादात्म्यात्', m: 'owing to identification' },
+          ],
+        },
+        {
+          t: 'देहश्चेतनतामगात्',
+          m: 'the body has attained consciousness',
+          parts: [
+            { t: 'देहः', m: 'the body' },
+            { t: 'चेतनताम्', m: 'consciousness' },
+            { t: 'अगात्', m: 'has attained' },
+          ],
+        },
         { t: '॥ ७ ॥' },
       ],
     ],
@@ -362,15 +421,52 @@ export const VERSES: Verse[] = [
       [
         { t: 'अहंकारस्य', m: 'of the ego' },
         { t: 'तादात्म्यं', m: 'identification' },
-        { t: 'चिच्छायादेहसाक्षिभिः', m: 'with the reflection of Consciousness, body and Witness, respectively' },
+        {
+          t: 'चिच्छायादेहसाक्षिभिः',
+          m: 'with the reflection of Consciousness, body and Witness, respectively',
+          parts: [
+            { t: 'चित्', m: 'Consciousness' },
+            { t: 'छाया', m: 'reflection' },
+            { t: 'देह', m: 'body' },
+            { t: 'साक्षिभिः', m: 'and Witness, respectively' },
+          ],
+        },
         { t: '।' },
       ],
       [
-        { t: 'सहजं', m: 'natural' },
-        { t: 'कर्मजं', m: 'due to past Karma' },
-        { t: 'भ्रान्तिजन्यं', m: 'due to ignorance' },
+        {
+          t: 'सहजं',
+          m: 'natural',
+          parts: [
+            { t: 'सह', m: 'together' },
+            { t: 'जम्', m: 'born (natural)' },
+          ],
+        },
+        {
+          t: 'कर्मजं',
+          m: 'due to past Karma',
+          parts: [
+            { t: 'कर्म', m: 'past Karma' },
+            { t: 'जम्', m: 'born of' },
+          ],
+        },
+        {
+          t: 'भ्रान्तिजन्यं',
+          m: 'due to ignorance',
+          parts: [
+            { t: 'भ्रान्ति', m: 'ignorance (delusion)' },
+            { t: 'जन्यम्', m: 'born of' },
+          ],
+        },
         { t: 'च', m: 'and' },
-        { t: 'त्रिविधं', m: 'of three kinds' },
+        {
+          t: 'त्रिविधं',
+          m: 'of three kinds',
+          parts: [
+            { t: 'त्रि', m: 'three' },
+            { t: 'विधम्', m: 'kinds' },
+          ],
+        },
         { t: 'क्रमात्', m: 'respectively' },
         { t: '॥ ८ ॥' },
       ],
@@ -384,16 +480,53 @@ export const VERSES: Verse[] = [
     number: 9,
     lines: [
       [
-        { t: 'संबंधिनोस्सतोर्नास्ति', m: 'of the mutually related (ego and reflection), so long as they are taken to be real, there is no' },
-        { t: 'निवृत्तिस्सहजस्य', m: 'annihilation of the natural (identification)' },
+        {
+          t: 'संबंधिनोस्सतोर्नास्ति',
+          m: 'of the mutually related (ego and reflection), so long as they are taken to be real, there is no',
+          parts: [
+            { t: 'संबन्धिनोः', m: 'of the mutually related (ego and reflection)' },
+            { t: 'सतोः', m: 'taken to be real' },
+            { t: 'न', m: 'not' },
+            { t: 'अस्ति', m: 'is' },
+          ],
+        },
+        {
+          t: 'निवृत्तिस्सहजस्य',
+          m: 'annihilation of the natural (identification)',
+          parts: [
+            { t: 'निवृत्तिः', m: 'annihilation' },
+            { t: 'सहजस्य', m: 'of the natural (identification)' },
+          ],
+        },
         { t: 'तु', m: 'certainly' },
         { t: '।' },
       ],
       [
-        { t: 'कर्मक्षयात्', m: 'with the wearing away of (the result of) Karma' },
-        { t: 'प्रबोधाच्च', m: 'and enlightenment' },
+        {
+          t: 'कर्मक्षयात्',
+          m: 'with the wearing away of (the result of) Karma',
+          parts: [
+            { t: 'कर्म', m: 'Karma' },
+            { t: 'क्षयात्', m: 'from wearing away' },
+          ],
+        },
+        {
+          t: 'प्रबोधाच्च',
+          m: 'and enlightenment',
+          parts: [
+            { t: 'प्रबोधात्', m: 'from enlightenment' },
+            { t: 'च', m: 'and' },
+          ],
+        },
         { t: 'निवर्तेते', m: 'disappear' },
-        { t: 'क्रमादुभे', m: 'the other two, respectively' },
+        {
+          t: 'क्रमादुभे',
+          m: 'the other two, respectively',
+          parts: [
+            { t: 'क्रमात्', m: 'respectively' },
+            { t: 'उभे', m: 'the other two' },
+          ],
+        },
         { t: '॥ ९ ॥' },
       ],
     ],
@@ -406,14 +539,46 @@ export const VERSES: Verse[] = [
     number: 10,
     lines: [
       [
-        { t: 'अहंकारलये', m: 'when (the thought of) ego disappears' },
+        {
+          t: 'अहंकारलये',
+          m: 'when (the thought of) ego disappears',
+          parts: [
+            { t: 'अहंकार', m: 'ego' },
+            { t: 'लये', m: 'in disappearance' },
+          ],
+        },
         { t: 'सुप्तौ', m: 'in deep sleep' },
-        { t: 'भवेद्देहोऽप्यचेतनः', m: 'the body also becomes unconscious' },
+        {
+          t: 'भवेद्देहोऽप्यचेतनः',
+          m: 'the body also becomes unconscious',
+          parts: [
+            { t: 'भवेत्', m: 'becomes' },
+            { t: 'देहः', m: 'the body' },
+            { t: 'अपि', m: 'also' },
+            { t: 'अचेतनः', m: 'unconscious' },
+          ],
+        },
         { t: '।' },
       ],
       [
-        { t: 'अहंकारविकासार्धस्वप्नस्', m: 'the half manifestation of the ego is the dream state' },
-        { t: 'सर्वस्तु', m: 'but the full (manifestation)' },
+        {
+          t: 'अहंकारविकासार्धस्वप्नस्',
+          m: 'the half manifestation of the ego is the dream state',
+          parts: [
+            { t: 'अहंकार', m: 'ego' },
+            { t: 'विकास', m: 'manifestation' },
+            { t: 'अर्ध', m: 'half' },
+            { t: 'स्वप्नः', m: 'the dream state' },
+          ],
+        },
+        {
+          t: 'सर्वस्तु',
+          m: 'but the full (manifestation)',
+          parts: [
+            { t: 'सर्वः', m: 'full' },
+            { t: 'तु', m: 'but' },
+          ],
+        },
         { t: 'जागरः', m: 'is the waking state' },
         { t: '॥ १० ॥' },
       ],
