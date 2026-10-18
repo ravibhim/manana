@@ -59,7 +59,8 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
     audio.addEventListener('pause', onPause)
 
     return () => {
-      saveResume(audio.currentTime)
+      // Before metadata loads currentTime is 0, which would wipe the saved position.
+      if (audio.readyState >= 1) saveResume(audio.currentTime)
       audio.pause()
       audio.removeAttribute('src')
       audio.load()

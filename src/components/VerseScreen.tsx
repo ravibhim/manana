@@ -2,13 +2,66 @@ import { useState } from 'react'
 import { BOOK, VERSES, type Token } from '../data/ddv'
 import { useAudioPlayer } from '../hooks/useAudioPlayer'
 import { formatTime } from '../lib/time'
-import NowPlaying from './NowPlaying'
-import { PlayPauseButton, Scrubber, SkipSpeedRow } from './PlayerControls'
+import type { Player } from '../hooks/useAudioPlayer'
 
 interface VerseScreenProps {
   verseNumber: number
   onNavigate: (verseNumber: number) => void
   onBack: () => void
+}
+
+/** The recitation is ~30s, so it is just a play/pause button whose background fills as it plays. */
+function RecitationPill({ player }: { player: Player }) {
+  const pct = player.duration ? (player.time / player.duration) * 100 : 0
+  return (
+    <button
+      onClick={player.toggle}
+      aria-label={player.playing ? 'Pause recitation' : 'Play recitation'}
+      className="relative mx-auto flex items-center gap-3 overflow-hidden rounded-full bg-[#f0e6d4] px-8 py-4 active:scale-95 transition-transform"
+    >
+      <span className="absolute inset-y-0 left-0 bg-[#e0cfa8]" style={{ width: `${pct}%` }} />
+      <span className="relative text-3xl leading-none">{player.playing ? '❚❚' : '▶'}</span>
+      <span className="relative text-lg font-medium">Recitation</span>
+    </button>
+  )
+}
+
+/** The commentary is long: it remembers where you were and can be seeked. */
+function CommentaryCard({ player }: { player: Player }) {
+  const pct = player.duration ? (player.time / player.duration) * 100 : 0
+  const status = player.playing
+    ? `${formatTime(player.time)} / ${formatTime(player.duration)}`
+    : player.time > 2
+      ? `Resume · ${formatTime(player.time)} / ${formatTime(player.duration)}`
+      : formatTime(player.duration)
+  return (
+    <div className="rounded-2xl bg-[#f0e6d4]/60 px-5 py-3">
+      <div className="flex items-center gap-4">
+        <button
+          onClick={player.toggle}
+          aria-label={player.playing ? 'Pause commentary' : 'Play commentary'}
+          className="h-14 w-14 shrink-0 rounded-full bg-[#3d2b1f] text-lg text-[#faf7f2] active:scale-90 transition-transform"
+        >
+          {player.playing ? '❚❚' : '▶'}
+        </button>
+        <div className="min-w-0 flex-1">
+          <p className="text-xs tracking-widest text-[#8b6914] uppercase">Commentary</p>
+          <p className="text-sm whitespace-nowrap text-[#3d2b1f]/70">{status}</p>
+        </div>
+      </div>
+      <input
+        type="range"
+        min={0}
+        max={player.duration}
+        step={0.5}
+        value={player.time}
+        onChange={e => player.seek(parseFloat(e.target.value))}
+        aria-label="Commentary progress"
+        className="seek mt-1 block w-full"
+        style={{ ['--pct' as string]: `${pct}%` }}
+      />
+    </div>
+  )
 }
 
 export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseScreenProps) {
@@ -21,7 +74,6 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
     resumeKey: `la-resume-ddv-${verse.number}-commentary`,
   })
   const [activeWord, setActiveWord] = useState<Token | null>(null)
-  const [expanded, setExpanded] = useState(false)
 
   const prev = VERSES.find(v => v.number === verseNumber - 1)
   const next = VERSES.find(v => v.number === verseNumber + 1)
@@ -43,7 +95,9 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
 
       {/* The verse */}
       <section className="reader mt-10 text-center">
-        <div className="devanagari text-[1.875rem] leading-[3rem]">
+        {verse.recitation && <div className="flex"><RecitationPill player={recitation} /></div>}
+
+        <div className="mt-8 devanagari text-[1.875rem] leading-[3rem]">
           {verse.lines.map((line, li) => (
             <p key={li}>
               {line.map((tok, ti) =>
@@ -67,7 +121,7 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
           ))}
         </div>
 
-        <p className="mt-5 whitespace-pre-line text-[1.0625rem] leading-7 text-[#3d2b1f]/60 italic">
+        <p className="mt-6 whitespace-pre-line text-[1.0625rem] leading-7 text-[#3d2b1f]/60 italic">
           {verse.transliteration}
         </p>
       </section>
@@ -96,51 +150,15 @@ export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseSc
         )}
       </div>}
 
-      {/* Recitation */}
-      {verse.recitation && <section className="mt-8 flex items-center gap-4 rounded-2xl bg-[#f0e6d4]/60 px-5 py-4">
-        <PlayPauseButton player={recitation} label="recitation" />
-        <div className="min-w-0 flex-1">
-          <p className="font-medium">Recitation</p>
-          <Scrubber player={recitation} label="Recitation" />
-        </div>
-      </section>}
+      {/* Audio */}
+      {verse.commentary && <div className="mt-6"><CommentaryCard player={commentary} /></div>}
 
       {/* Translation */}
-      <section className="mt-10">
+      <section className="mt-8">
         <h2 className="text-xs tracking-widest text-[#8b6914] uppercase">Meaning</h2>
         <p className="mt-3 text-[1.0625rem] leading-7">{verse.translation}</p>
       </section>
 
-      {/* Commentary */}
-      {verse.commentary && <section className="mt-12 rounded-2xl bg-[#3d2b1f] px-5 py-5 text-[#faf7f2]">
-        <div className="flex items-center gap-4">
-          <button
-            onClick={commentary.toggle}
-            aria-label={commentary.playing ? 'Pause commentary' : 'Play commentary'}
-            className="h-14 w-14 shrink-0 rounded-full bg-[#faf7f2] text-lg text-[#3d2b1f] active:scale-90 transition-transform"
-          >
-            {commentary.playing ? '❚❚' : '▶'}
-          </button>
-          <button onClick={() => setExpanded(true)} className="min-w-0 flex-1 text-left">
-            <p className="font-medium">Swami’s commentary</p>
-            <p className="text-sm text-[#faf7f2]/60">{formatTime(commentary.duration)} · tap to expand</p>
-          </button>
-        </div>
-        <div className="mt-3 [&_input]:accent-[#c9a227] [&_div]:text-[#faf7f2]/60">
-          <Scrubber player={commentary} label="Commentary" />
-        </div>
-        <div className="mt-3 [&_button]:bg-[#faf7f2]/15 [&_button]:text-[#faf7f2]">
-          <SkipSpeedRow player={commentary} />
-        </div>
-      </section>}
-
-      {expanded && (
-        <NowPlaying
-          verse={verse}
-          player={commentary}
-          onClose={() => setExpanded(false)}
-        />
-      )}
     </div>
   )
 }

@@ -26,7 +26,7 @@ export default function NowPlaying({ verse, player, onClose }: NowPlayingProps) 
 
       <div className="mt-auto space-y-8">
         <div className="text-center">
-          <p className="text-lg">Swami’s commentary</p>
+          <p className="text-lg">Commentary</p>
           <p className="text-sm text-[#3d2b1f]/60">{BOOK.title}</p>
         </div>
         <Scrubber player={player} label="Commentary" />
