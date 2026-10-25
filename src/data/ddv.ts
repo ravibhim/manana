@@ -1546,6 +1546,8 @@ export const VERSES: Verse[] = [
       'akhaṃḍaika-rasaṃ vastu sac-cid-ānanda-lakṣaṇam |\nity avicchinna-ciṃteyaṃ samādhir madhyamo bhavet || 28 ||',
     translation:
       'The entity which is (always) of the same nature and unlimited (by time, space etc.) and which is characterised by Existence-Consciousness-Bliss, is verily Brahman. Such uninterrupted reflection is called the intermediate absorption, that is, the Savikalpaka Samādhi associated with sound (object).',
+    recitation: { src: '/audio/ddv-28-recitation.mp3', videoId: 'k5BEuDPDUFc', start: 2623, end: 2650 },
+    commentary: { src: '/audio/ddv-28-commentary.mp3', videoId: 'k5BEuDPDUFc', start: 2650, end: 3119 },
   },
   {
     number: 29,
