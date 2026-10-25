@@ -605,5 +605,7 @@ export const VERSES: Verse[] = [
       'ahaṃkāra-laye suptau bhaved deho ’py acetanaḥ |\nahaṃkāra-vikāsārdha-svapnas sarvas tu jāgaraḥ || 10 ||',
     translation:
       'In the state of deep sleep, when (the thought of) ego disappears, the body also becomes unconscious. The state in which there is the half manifestation of the ego is called the dream state and the full manifestation of the ego is the state of waking.',
+    recitation: { src: '/audio/ddv-10-recitation.mp3', videoId: 'ASH1rD2jOXk', start: 839, end: 869 },
+    commentary: { src: '/audio/ddv-10-commentary.mp3', videoId: 'ASH1rD2jOXk', start: 869, end: 1364 },
   },
 ]
