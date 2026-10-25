@@ -1127,5 +1127,7 @@ export const VERSES: Verse[] = [
       'asti bhāti priyaṃ rūpaṃ nāma-cety-aṃśa-pañcakam |\nādya-trayaṃ brahma-rūpaṃ jagad-rūpaṃ tato dvayam || 20 ||',
     translation:
       'Every entity has five characteristics, viz., existence, cognizability, attractiveness, form and name. Of these, the first three belong to Brahman and the next two to the world.',
+    recitation: { src: '/audio/ddv-20-recitation.mp3', videoId: 'wmdxSh84EI8', start: 1736, end: 1763 },
+    commentary: { src: '/audio/ddv-20-commentary.mp3', videoId: 'wmdxSh84EI8', start: 1763, end: 3167 },
   },
 ]
