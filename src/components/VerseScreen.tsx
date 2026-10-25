@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import { BOOK, VERSES, type ClipKind, type Token } from '../data/ddv'
-import { useAudioPlayer } from '../hooks/useAudioPlayer'
-import { formatTime } from '../lib/time'
+import { useAudioPlayer, type Player } from '../hooks/useAudioPlayer'
 import { commentaryResumeKey, STARTED_AFTER } from '../lib/progress'
-import type { Player } from '../hooks/useAudioPlayer'
+import { formatTime } from '../lib/time'
 
 interface VerseScreenProps {
   verseNumber: number
@@ -86,8 +85,6 @@ export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack 
   const prev = VERSES.find(v => v.number === verseNumber - 1)
   const next = VERSES.find(v => v.number === verseNumber + 1)
 
-  // Starting one clip stops the other.
-
   const navBtn = 'px-3 py-2 text-lg active:opacity-50 disabled:opacity-20'
 
   return (
@@ -166,7 +163,6 @@ export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack 
         <h2 className="text-xs tracking-widest text-gold uppercase">Meaning</h2>
         <p className="mt-3 text-[1.0625rem] leading-7">{verse.translation}</p>
       </section>
-
     </div>
   )
 }
