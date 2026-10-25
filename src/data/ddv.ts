@@ -1130,4 +1130,265 @@ export const VERSES: Verse[] = [
     recitation: { src: '/audio/ddv-20-recitation.mp3', videoId: 'wmdxSh84EI8', start: 1736, end: 1763 },
     commentary: { src: '/audio/ddv-20-commentary.mp3', videoId: 'wmdxSh84EI8', start: 1763, end: 3167 },
   },
+  {
+    number: 21,
+    lines: [
+      [
+        {
+          t: 'खवाय्वग्निजलोर्वीषु',
+          m: 'in the Ākāsha (ether), air, fire, water and earth',
+          parts: [
+            { t: 'ख', m: 'Ākāsha (ether)' },
+            { t: 'वायु', m: 'air' },
+            { t: 'अग्नि', m: 'fire' },
+            { t: 'जल', m: 'water' },
+            { t: 'उर्वीषु', m: 'and earth, in' },
+          ],
+        },
+        {
+          t: 'देवतिर्यङ्नरादिषु',
+          m: 'in gods, animals and men etc.',
+          parts: [
+            { t: 'देव', m: 'gods' },
+            { t: 'तिर्यक्', m: 'animals' },
+            { t: 'नर', m: 'men' },
+            { t: 'आदिषु', m: 'etc., in' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'अभिन्नास्सच्चिदानंदाः',
+          m: 'the attributes of Existence, Consciousness and Bliss, common to all',
+          parts: [
+            { t: 'अभिन्नाः', m: 'common (undivided)' },
+            { t: 'सत्', m: 'existence' },
+            { t: 'चित्', m: 'consciousness' },
+            { t: 'आनंदाः', m: 'and bliss' },
+          ],
+        },
+        { t: 'भिद्येते', m: 'differ' },
+        {
+          t: 'रूपनामनी',
+          m: 'forms and names',
+          parts: [
+            { t: 'रूप', m: 'form' },
+            { t: 'नामनी', m: 'and name' },
+          ],
+        },
+        { t: '॥ २१ ॥' },
+      ],
+    ],
+    transliteration:
+      'kha-vāyv-agni-jalorvīṣu deva-tiryaṅ-narādiṣu |\nabhinnās sac-cid-ānandāḥ bhidyete rūpa-nāmanī || 21 ||',
+    translation:
+      'The attributes of Existence, Consciousness and Bliss are equally present in the Ākāsha (ether), air, fire, water and earth as well as in gods, animals and men etc. Names and forms make one differ from the other.',
+  },
+  {
+    number: 22,
+    lines: [
+      [
+        { t: 'उपेक्ष्य', m: 'being indifferent' },
+        {
+          t: 'नामरूपे',
+          m: 'to name and form',
+          parts: [
+            { t: 'नाम', m: 'name' },
+            { t: 'रूपे', m: 'and form' },
+          ],
+        },
+        { t: 'द्वे', m: 'two' },
+        {
+          t: 'सच्चिदानंदतत्परः',
+          m: 'being devoted to Satchidānanda',
+          parts: [
+            { t: 'सत्', m: 'existence' },
+            { t: 'चित्', m: 'consciousness' },
+            { t: 'आनंद', m: 'bliss' },
+            { t: 'तत्परः', m: 'being devoted to that' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        { t: 'समाधिं', m: 'concentration' },
+        { t: 'सर्वदा', m: 'always' },
+        {
+          t: 'कुर्याद्हृदये',
+          m: 'should practise, in the heart',
+          parts: [
+            { t: 'कुर्यात्', m: 'should practise' },
+            { t: 'हृदये', m: 'in the heart' },
+          ],
+        },
+        {
+          t: 'वाऽथवा',
+          m: 'either … or',
+          parts: [
+            { t: 'वा', m: 'either' },
+            { t: 'अथवा', m: 'or' },
+          ],
+        },
+        { t: 'बहिः', m: 'outside' },
+        { t: '॥ २२ ॥' },
+      ],
+    ],
+    transliteration:
+      'upekṣya nāma-rūpe dve sac-cid-ānanda-tat-paraḥ |\nsamādhiṃ sarvadā kuryād hṛdaye vā ’thavā bahiḥ || 22 ||',
+    translation:
+      'Having become indifferent to name and form and being devoted to Satchidānanda, one should always practise concentration either within the heart or outside.',
+  },
+  {
+    number: 23,
+    lines: [
+      [
+        { t: 'सविकल्पो', m: 'Savikalpa (in which ideas are present)' },
+        { t: 'निर्विकल्पः', m: 'Nirvikalpa (in which ideas do not exist)' },
+        {
+          t: 'समाधिर्द्विविधो',
+          m: 'concentration (Samādhi) is of two kinds',
+          parts: [
+            { t: 'समाधिः', m: 'concentration (Samādhi)' },
+            { t: 'द्विविधः', m: 'of two kinds' },
+          ],
+        },
+        { t: 'हृदि', m: 'within the heart' },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'दृश्यशब्दानुवेधेन',
+          m: 'according to its association with a cognizable object or a sound',
+          parts: [
+            { t: 'दृश्य', m: 'cognizable object' },
+            { t: 'शब्द', m: 'sound' },
+            { t: 'अनुवेधेन', m: 'by association' },
+          ],
+        },
+        { t: 'सविकल्पः', m: 'Savikalpa (in which ideas are present)' },
+        {
+          t: 'पुनर्द्विधा',
+          m: 'again of two kinds',
+          parts: [
+            { t: 'पुनः', m: 'again' },
+            { t: 'द्विधा', m: 'of two kinds' },
+          ],
+        },
+        { t: '॥ २३ ॥' },
+      ],
+    ],
+    transliteration:
+      'savikalpo nirvikalpaḥ samādhir dvividho hṛdi |\ndṛśya-śabdānuvedhena savikalpaḥ punar dvidhā || 23 ||',
+    translation:
+      'Two kinds of Samādhi to be practised in the heart (within one’s self) are known as Savikalpa and Nirvikalpa. Savikalpa Samādhi is again divided into two classes, according to its association with a cognizable object or a sound (as an object).',
+  },
+  {
+    number: 24,
+    lines: [
+      [
+        {
+          t: 'कामाद्याश्चित्तगा',
+          m: 'desire etc., centred in the mind',
+          parts: [
+            { t: 'कामाद्याः', m: 'desire etc.' },
+            { t: 'चित्तगाः', m: 'centred in the mind' },
+          ],
+        },
+        {
+          t: 'दृश्यास्तत्साक्षित्वेन',
+          m: '(cognizable) objects, as their Witness',
+          parts: [
+            { t: 'दृश्याः', m: '(cognizable) objects' },
+            { t: 'तत्', m: 'their' },
+            { t: 'साक्षित्वेन', m: 'as Witness' },
+          ],
+        },
+        { t: 'चेतनम्', m: 'Consciousness' },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'ध्यायेद्दृश्यानुविद्धोऽयं',
+          m: 'should meditate; this is combined with cognizable objects',
+          parts: [
+            { t: 'ध्यायेत्', m: 'should meditate' },
+            { t: 'दृश्यानुविद्धः', m: 'combined with cognizable objects' },
+            { t: 'अयं', m: 'this' },
+          ],
+        },
+        {
+          t: 'समाधिस्सविकल्पकः',
+          m: 'concentration in which ideas are present',
+          parts: [
+            { t: 'समाधिः', m: 'concentration' },
+            { t: 'सविकल्पकः', m: 'in which ideas are present' },
+          ],
+        },
+        { t: '॥ २४ ॥' },
+      ],
+    ],
+    transliteration:
+      'kāmādyāś citta-gā dṛśyās tat-sākṣitvena cetanam |\ndhyāyed dṛśyānuviddho ’yaṃ samādhis savikalpakaḥ || 24 ||',
+    translation:
+      'Desire etc. centred in the mind are to be treated as (cognizable) objects. Meditate on Consciousness as their Witness. This is what is called Savikalpa Samādhi associated with (cognizable) objects.',
+  },
+  {
+    number: 25,
+    lines: [
+      [
+        {
+          t: 'असंगस्सच्चिदानंदस्स्वप्रभो',
+          m: 'unattached, Existence-Consciousness-Bliss, self-luminous',
+          parts: [
+            { t: 'असंगः', m: 'unattached' },
+            { t: 'सत्', m: 'existence' },
+            { t: 'चित्', m: 'consciousness' },
+            { t: 'आनंदः', m: 'bliss' },
+            { t: 'स्वप्रभः', m: 'self-luminous' },
+          ],
+        },
+        {
+          t: 'द्वैतवर्जितः',
+          m: 'free from duality',
+          parts: [
+            { t: 'द्वैत', m: 'duality' },
+            { t: 'वर्जितः', m: 'free from' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'अस्मीति',
+          m: '(I) am — thus',
+          parts: [
+            { t: 'अस्मि', m: 'am' },
+            { t: 'इति', m: 'thus' },
+          ],
+        },
+        {
+          t: 'शब्दविद्धोऽयं',
+          m: 'this is associated with words',
+          parts: [
+            { t: 'शब्दविद्धः', m: 'associated with words' },
+            { t: 'अयं', m: 'this' },
+          ],
+        },
+        {
+          t: 'समाधिस्सविकल्पकः',
+          m: 'Savikalpaka Samādhi',
+          parts: [
+            { t: 'समाधिः', m: 'concentration (Samādhi)' },
+            { t: 'सविकल्पकः', m: 'in which ideas are present' },
+          ],
+        },
+        { t: '॥ २५ ॥' },
+      ],
+    ],
+    transliteration:
+      'asaṅgas sac-cid-ānandas sva-prabho dvaita-varjitaḥ |\nasmīti śabda-viddho ’yaṃ samādhis savikalpakaḥ || 25 ||',
+    translation:
+      'I am Existence-Consciousness-Bliss, unattached, self-luminous and free from duality. This is known as the (other kind of) Savikalpa Samādhi associated with sound (object).',
+  },
 ]
