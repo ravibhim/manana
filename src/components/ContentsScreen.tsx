@@ -18,6 +18,12 @@ export default function ContentsScreen({ onSelect }: ContentsScreenProps) {
         <p className="mt-2 text-lg">{BOOK.title}</p>
         <p className="mt-1 text-sm text-ink/60">{BOOK.subtitle}</p>
         <p className="mt-1 text-sm text-gold">{BOOK.author}</p>
+        <img
+          src={BOOK.lecturerPhoto.src}
+          alt={BOOK.lecturer}
+          className="mx-auto mt-6 h-16 w-16 rounded-full object-cover"
+        />
+        <p className="mt-3 text-sm">Recitation and commentary by {BOOK.lecturer}</p>
       </header>
 
       <ul className="mt-10 divide-y divide-ink/10">

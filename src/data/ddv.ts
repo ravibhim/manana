@@ -47,6 +47,12 @@ export const BOOK = {
   author: 'Swami Nikhilananda',
   /** Recites and explains the verses in the audio clips. */
   lecturer: 'Swami Sarvapriyananda',
+  /**
+   * Cropped thumbnail of the lecturer, from the Vedanta Society of New York's resident-minister page
+   * (https://www.vedantany.org/resident-minister). It is the Society's photo and carries no licence,
+   * so ask mail@vedantany.org before sharing the app beyond personal use.
+   */
+  lecturerPhoto: { src: '/swami-sarvapriyananda.jpg' },
   totalVerses: 46,
 }
 
