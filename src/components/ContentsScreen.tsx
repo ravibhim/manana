@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
-import type { AutoPlay } from '../App'
-import { BOOK, VERSES } from '../data/ddv'
+import { BOOK, VERSES, type ClipKind } from '../data/ddv'
 import { nextListenCta, type ListenCta } from '../lib/progress'
 
 interface ContentsScreenProps {
-  onSelect: (verseNumber: number, autoPlay?: AutoPlay) => void
+  onSelect: (verseNumber: number, autoPlay?: ClipKind) => void
 }
 
 export default function ContentsScreen({ onSelect }: ContentsScreenProps) {

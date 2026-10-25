@@ -19,6 +19,9 @@ export interface Clip {
   end: number
 }
 
+/** The two kinds of audio a verse can have. */
+export type ClipKind = 'recitation' | 'commentary'
+
 export const clipLength = (clip: Clip) => clip.end - clip.start
 
 export interface Verse {

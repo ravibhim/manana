@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react'
-import type { AutoPlay } from '../App'
-import { BOOK, VERSES, type Token } from '../data/ddv'
+import { BOOK, VERSES, type ClipKind, type Token } from '../data/ddv'
 import { useAudioPlayer } from '../hooks/useAudioPlayer'
 import { formatTime } from '../lib/time'
-import { resumeKey, STARTED_AFTER } from '../lib/progress'
+import { commentaryResumeKey, STARTED_AFTER } from '../lib/progress'
 import type { Player } from '../hooks/useAudioPlayer'
 
 interface VerseScreenProps {
   verseNumber: number
   /** Start this clip as soon as the screen opens (the user just tapped a button on the index page). */
-  autoPlay?: AutoPlay
+  autoPlay?: ClipKind
   onNavigate: (verseNumber: number) => void
   onBack: () => void
 }
@@ -75,7 +74,7 @@ export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack 
   const commentary = useAudioPlayer(verse.commentary?.src, {
     title: `${title} — Commentary`,
     artist: 'Swami',
-    resumeKey: resumeKey(verse.number),
+    resumeKey: commentaryResumeKey(verse.number),
   })
   useEffect(() => {
     if (autoPlay === 'commentary') commentary.toggle()

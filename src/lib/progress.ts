@@ -1,4 +1,4 @@
-import { clipLength, VERSES } from '../data/ddv'
+import { clipLength, VERSES, type ClipKind } from '../data/ddv'
 import { formatTime } from './time'
 
 /** A commentary counts as done once it has played to within this many seconds of the end. */
@@ -6,7 +6,7 @@ export const DONE_MARGIN = 5
 /** Positions this small are accidental taps, not listening. */
 export const STARTED_AFTER = 2
 
-export const resumeKey = (verseNumber: number) => `la-resume-ddv-${verseNumber}-commentary`
+export const commentaryResumeKey = (verseNumber: number) => `la-resume-ddv-${verseNumber}-commentary`
 
 export function readPosition(key: string): number {
   try { return parseFloat(localStorage.getItem(key) ?? '0') || 0 } catch { return 0 }
@@ -20,7 +20,7 @@ export function writePosition(key: string, seconds: number) {
 export interface ListenCta {
   verse: number
   label: string
-  play: 'recitation' | 'commentary'
+  play: ClipKind
   /** Time left to hear (resume) or the recitation length (listen). */
   detail: string
 }
@@ -31,7 +31,7 @@ export interface ListenCta {
  */
 export function nextListenCta(): ListenCta | null {
   const heard = VERSES.flatMap(v => (v.commentary ? [{ verse: v.number, clip: v.commentary }] : []))
-    .map(c => ({ ...c, position: readPosition(resumeKey(c.verse)) }))
+    .map(c => ({ ...c, position: readPosition(commentaryResumeKey(c.verse)) }))
     .filter(c => c.position > STARTED_AFTER)
   const latest = heard.at(-1)
 
