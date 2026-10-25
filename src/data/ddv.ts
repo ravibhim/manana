@@ -1077,6 +1077,8 @@ export const VERSES: Verse[] = [
       'atrāpy āvṛti-nāśena vibhāti brahma-sargayoḥ |\nbhedas tayor vikāras syāt sarge na brahmaṇi kvacit || 19 ||',
     translation:
       'In this case also, the distinction between Brahman and the phenomenal universe becomes clear with the disappearance of the veiling power. Therefore change is perceived in the phenomenal universe, but never in Brahman.',
+    recitation: { src: '/audio/ddv-19-recitation.mp3', videoId: 'wmdxSh84EI8', start: 1219, end: 1247 },
+    commentary: { src: '/audio/ddv-19-commentary.mp3', videoId: 'wmdxSh84EI8', start: 1247, end: 1736 },
   },
   {
     number: 20,
