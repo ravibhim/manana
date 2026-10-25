@@ -972,6 +972,8 @@ export const VERSES: Verse[] = [
       'asya jīvatvam āropāt sākṣiṇy apy avabhāsate |\nāvṛtau tu vinaṣṭāyāṃ bhede bhāte ’payāti tat || 17 ||',
     translation:
       'The character of an embodied self appears through false superimposition in the Sākshin also. With the disappearance of the veiling power, the distinction (between the seer and the object) becomes clear and with it the Jiva character of the Sākshin (Witness) disappears.',
+    recitation: { src: '/audio/ddv-17-recitation.mp3', videoId: 'QOheqKTZxt4', start: 2136, end: 2164 },
+    commentary: { src: '/audio/ddv-17-commentary.mp3', videoId: 'QOheqKTZxt4', start: 2164, end: 4004.72 },
   },
   {
     number: 18,
