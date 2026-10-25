@@ -930,6 +930,8 @@ export const VERSES: Verse[] = [
       'sākṣiṇaḥ purato bhāti liṃgaṃ dehena saṃyutam |\nciti-cchāyā samāveśāj jīvas syād vyāvahārikaḥ || 16 ||',
     translation:
       'The subtle body (Lingam) which exists in close proximity to the Witness (Sākshin) identifying itself with the gross body becomes the embodied empirical self, on account of its being affected by the reflection of Consciousness.',
+    recitation: { src: '/audio/ddv-16-recitation.mp3', videoId: 'QOheqKTZxt4', start: 1756, end: 1784 },
+    commentary: { src: '/audio/ddv-16-commentary.mp3', videoId: 'QOheqKTZxt4', start: 1788, end: 2133 },
   },
   {
     number: 17,
