@@ -1490,6 +1490,8 @@ export const VERSES: Verse[] = [
       'hṛdīva bāhya-deśe ’pi yasmin kasmiṃś ca vastuni |\nsamādhir ādyas san-mātrān nāma-rūpa-pṛthak-kṛtiḥ || 27 ||',
     translation:
       'The first kind of Samādhi is possible with the help of any external object as it is with the help of an internal object. In that Samādhi the name and form are separated from what is Pure Existence (Brahman).',
+    recitation: { src: '/audio/ddv-27-recitation.mp3', videoId: 'k5BEuDPDUFc', start: 1539, end: 1567 },
+    commentary: { src: '/audio/ddv-27-commentary.mp3', videoId: 'k5BEuDPDUFc', start: 1567, end: 2623 },
   },
   {
     number: 28,
