@@ -889,5 +889,7 @@ export const VERSES: Verse[] = [
       'antar-dṛg-dṛśyayor bhedaṃ bahiś ca brahma-sargayoḥ |\nāvṛṇoty aparā śaktis sā saṃsārasya kāraṇam || 15 ||',
     translation:
       'The other power (of Māyā) conceals the distinction between the perceiver and the perceived objects which are cognized within the body as well as the distinction between Brahman and the phenomenal universe which is perceived outside (one’s own body). This power is the cause of the phenomenal universe.',
+    recitation: { src: '/audio/ddv-15-recitation.mp3', videoId: 'AiDa_7Blimg', start: 2717, end: 2745 },
+    commentary: { src: '/audio/ddv-15-commentary.mp3', videoId: 'AiDa_7Blimg', start: 2745, end: 3136 },
   },
 ]
