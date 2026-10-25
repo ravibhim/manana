@@ -1184,6 +1184,8 @@ export const VERSES: Verse[] = [
       'kha-vāyv-agni-jalorvīṣu deva-tiryaṅ-narādiṣu |\nabhinnās sac-cid-ānandāḥ bhidyete rūpa-nāmanī || 21 ||',
     translation:
       'The attributes of Existence, Consciousness and Bliss are equally present in the Ākāsha (ether), air, fire, water and earth as well as in gods, animals and men etc. Names and forms make one differ from the other.',
+    recitation: { src: '/audio/ddv-21-recitation.mp3', videoId: 'bx9n8vccx38', start: 731, end: 759 },
+    commentary: { src: '/audio/ddv-21-commentary.mp3', videoId: 'bx9n8vccx38', start: 759, end: 1195 },
   },
   {
     number: 22,
