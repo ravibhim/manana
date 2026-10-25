@@ -1338,6 +1338,8 @@ export const VERSES: Verse[] = [
       'kāmādyāś citta-gā dṛśyās tat-sākṣitvena cetanam |\ndhyāyed dṛśyānuviddho ’yaṃ samādhis savikalpakaḥ || 24 ||',
     translation:
       'Desire etc. centred in the mind are to be treated as (cognizable) objects. Meditate on Consciousness as their Witness. This is what is called Savikalpa Samādhi associated with (cognizable) objects.',
+    recitation: { src: '/audio/ddv-24-recitation.mp3', videoId: 'bx9n8vccx38', start: 1679, end: 1708 },
+    commentary: { src: '/audio/ddv-24-commentary.mp3', videoId: 'bx9n8vccx38', start: 1708, end: 2481 },
   },
   {
     number: 25,
