@@ -45,7 +45,8 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
         saveResume(audio.currentTime)
       }
     }
-    const onEnded = () => { setPlaying(false); setTime(0); saveResume(0) }
+    // Keep the end position (not 0) so the index page can tell this commentary was finished.
+    const onEnded = () => { setPlaying(false); setTime(0); saveResume(audio.duration) }
     const onPlay = () => setPlaying(true)
     const onPause = () => setPlaying(false)
 

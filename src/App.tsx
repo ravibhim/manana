@@ -2,9 +2,19 @@ import { useState } from 'react'
 import ContentsScreen from './components/ContentsScreen'
 import VerseScreen from './components/VerseScreen'
 
-export default function App() {
-  const [verseNumber, setVerseNumber] = useState<number | null>(null)
+export type AutoPlay = 'recitation' | 'commentary'
 
-  if (verseNumber === null) return <ContentsScreen onSelect={setVerseNumber} />
-  return <VerseScreen key={verseNumber} verseNumber={verseNumber} onNavigate={setVerseNumber} onBack={() => setVerseNumber(null)} />
+export default function App() {
+  const [open, setOpen] = useState<{ verse: number; autoPlay?: AutoPlay } | null>(null)
+
+  if (open === null) return <ContentsScreen onSelect={(verse, autoPlay) => setOpen({ verse, autoPlay })} />
+  return (
+    <VerseScreen
+      key={open.verse}
+      verseNumber={open.verse}
+      autoPlay={open.autoPlay}
+      onNavigate={verse => setOpen({ verse })}
+      onBack={() => setOpen(null)}
+    />
+  )
 }

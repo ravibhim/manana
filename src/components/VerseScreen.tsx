@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import type { AutoPlay } from '../App'
 import { BOOK, VERSES, type Token } from '../data/ddv'
 import { useAudioPlayer } from '../hooks/useAudioPlayer'
 import { formatTime } from '../lib/time'
+import { resumeKey } from '../lib/progress'
 import type { Player } from '../hooks/useAudioPlayer'
 
 interface VerseScreenProps {
   verseNumber: number
+  /** Start this clip as soon as the screen opens (the user just tapped a button on the index page). */
+  autoPlay?: AutoPlay
   onNavigate: (verseNumber: number) => void
   onBack: () => void
 }
@@ -64,15 +68,20 @@ function CommentaryCard({ player }: { player: Player }) {
   )
 }
 
-export default function VerseScreen({ verseNumber, onNavigate, onBack }: VerseScreenProps) {
+export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack }: VerseScreenProps) {
   const verse = VERSES.find(v => v.number === verseNumber)!
   const title = `${BOOK.title} · Verse ${verse.number}`
   const recitation = useAudioPlayer(verse.recitation?.src, { title: `${title} — Recitation`, artist: BOOK.author })
   const commentary = useAudioPlayer(verse.commentary?.src, {
     title: `${title} — Commentary`,
     artist: 'Swami',
-    resumeKey: `la-resume-ddv-${verse.number}-commentary`,
+    resumeKey: resumeKey(verse.number),
   })
+  useEffect(() => {
+    if (autoPlay === 'commentary') commentary.toggle()
+    if (autoPlay === 'recitation') recitation.toggle()
+    // Deliberately only on open: later renders must not restart playback.
+  }, [])
   const [activeWord, setActiveWord] = useState<Token | null>(null)
 
   const prev = VERSES.find(v => v.number === verseNumber - 1)
