@@ -1286,6 +1286,8 @@ export const VERSES: Verse[] = [
       'savikalpo nirvikalpaḥ samādhir dvividho hṛdi |\ndṛśya-śabdānuvedhena savikalpaḥ punar dvidhā || 23 ||',
     translation:
       'Two kinds of Samādhi to be practised in the heart (within one’s self) are known as Savikalpa and Nirvikalpa. Savikalpa Samādhi is again divided into two classes, according to its association with a cognizable object or a sound (as an object).',
+    recitation: { src: '/audio/ddv-23-recitation.mp3', videoId: 'bx9n8vccx38', start: 1437, end: 1464 },
+    commentary: { src: '/audio/ddv-23-commentary.mp3', videoId: 'bx9n8vccx38', start: 1464, end: 1679 },
   },
   {
     number: 24,
