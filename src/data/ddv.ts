@@ -1642,4 +1642,242 @@ export const VERSES: Verse[] = [
     translation:
       'With the disappearance of the attachment to the body and with the realization of the Supreme Self, to whatever object the mind is directed one experiences Samādhi.',
   },
+  {
+    number: 31,
+    lines: [
+      [
+        { t: 'भिद्यते', m: 'is broken' },
+        {
+          t: 'हृदयग्रंथिः',
+          m: 'the fetters of the heart',
+          parts: [
+            { t: 'हृदय', m: 'heart' },
+            { t: 'ग्रंथिः', m: 'fetters (knot)' },
+          ],
+        },
+        { t: 'छिद्यंते', m: 'are solved' },
+        {
+          t: 'सर्वसंशयाः',
+          m: 'all doubts',
+          parts: [
+            { t: 'सर्व', m: 'all' },
+            { t: 'संशयाः', m: 'doubts' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        { t: 'क्षीयंते', m: 'wear away' },
+        {
+          t: 'चास्यकर्माणि',
+          m: 'and all his works (and their effects)',
+          parts: [
+            { t: 'च', m: 'and' },
+            { t: 'अस्य', m: 'his' },
+            { t: 'कर्माणि', m: 'works (and their effects)' },
+          ],
+        },
+        {
+          t: 'तस्मिन्दृष्टे',
+          m: 'by beholding Him',
+          parts: [
+            { t: 'तस्मिन्', m: 'Him' },
+            { t: 'दृष्टे', m: 'by beholding' },
+          ],
+        },
+        {
+          t: 'परावरे',
+          m: 'who is high and low',
+          parts: [
+            { t: 'पर', m: 'high' },
+            { t: 'अवरे', m: 'low' },
+          ],
+        },
+        { t: '॥ ३१ ॥' },
+      ],
+    ],
+    transliteration:
+      'bhidyate hṛdaya-graṃthiḥ chidyaṃte sarva-saṃśayāḥ |\nkṣīyaṃte cāsya-karmāṇi tasmin dṛṣṭe parāvare || 31 ||',
+    translation:
+      'By beholding Him who is high and low, the fetters of the heart are broken, all doubts are solved and all his Karmas (activities and their effects) wear away.',
+  },
+  {
+    number: 32,
+    lines: [
+      [
+        {
+          t: 'अवच्छिन्नश्चिदाभासस्तृतीयः',
+          m: 'limited, an unreal presentation of Consciousness, the third',
+          parts: [
+            { t: 'अवच्छिन्नः', m: 'limited' },
+            { t: 'चिदाभासः', m: 'unreal presentation of Consciousness' },
+            { t: 'तृतीयः', m: 'the third' },
+          ],
+        },
+        {
+          t: 'स्वप्नकल्पितः',
+          m: 'as imagined in dream',
+          parts: [
+            { t: 'स्वप्न', m: 'dream' },
+            { t: 'कल्पितः', m: 'imagined' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'विज्ञेयस्त्रिविधोजीवस्तत्राद्यः',
+          m: 'the embodied being should be known as of three kinds; among them, the first',
+          parts: [
+            { t: 'विज्ञेयः', m: 'should be known' },
+            { t: 'त्रिविधः', m: 'of three kinds' },
+            { t: 'जीवः', m: 'embodied being (Jiva)' },
+            { t: 'तत्र', m: 'among them' },
+            { t: 'आद्यः', m: 'the first' },
+          ],
+        },
+        { t: 'पारमार्थिकः', m: 'is the real nature (of Jiva)' },
+        { t: '॥ ३२ ॥' },
+      ],
+    ],
+    transliteration:
+      'avacchinnaś cid-ābhāsas tṛtīyaḥ svapna-kalpitaḥ |\nvijñeyas trividho jīvas tatrādyaḥ pāramārthikaḥ || 32 ||',
+    translation:
+      'There are three conceptions of Jiva (Consciousness), namely, as that limited (by) prāna etc., as that presented (in the mind) and the third one Consciousness as imagined in dream (to have assumed the forms of man etc.).',
+  },
+  {
+    number: 33,
+    lines: [
+      [
+        { t: 'अवच्छेदः', m: 'limitation' },
+        {
+          t: 'कल्पितस्यादवच्छेद्यं',
+          m: 'is imaginary (illusory); what appears to be limited',
+          parts: [
+            { t: 'कल्पितः', m: 'imaginary (illusory)' },
+            { t: 'स्यात्', m: 'is' },
+            { t: 'अवच्छेद्यं', m: 'what appears to be limited' },
+          ],
+        },
+        { t: 'तु', m: 'but' },
+        { t: 'वास्तवम्', m: 'real' },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'तस्मिन्जीवत्वमारोपात्',
+          m: 'in that (Brahman), the Jivahood appears on account of superimposition',
+          parts: [
+            { t: 'तस्मिन्', m: 'in that (Brahman)' },
+            { t: 'जीवत्वं', m: 'Jivahood' },
+            { t: 'आरोपात्', m: 'on account of superimposition' },
+          ],
+        },
+        { t: 'ब्रह्मत्वं', m: '(it is) of the nature of Brahman' },
+        { t: 'तु', m: 'but' },
+        { t: 'स्वभावतः', m: 'naturally' },
+        { t: '॥ ३३ ॥' },
+      ],
+    ],
+    transliteration:
+      'avacchedaḥ kalpitasyād avacchedyaṃ tu vāstavam |\ntasmin jīvatvam āropāt brahmatvaṃ tu svabhāvataḥ || 33 ||',
+    translation:
+      'Limitation is illusory but that which appears to be limited is real. The Jivahood (of the Self) is due to the superimposition of the illusory attributes. But really it has the nature of Brahman.',
+  },
+  {
+    number: 34,
+    lines: [
+      [
+        { t: 'अवच्छिन्नस्य', m: 'of the limited' },
+        { t: 'जीवस्य', m: 'Jiva' },
+        { t: 'पूर्णेन', m: 'with the partless (whole)' },
+        {
+          t: 'ब्रह्मणैकताम्',
+          m: 'with Brahman, identity',
+          parts: [
+            { t: 'ब्रह्मणा', m: 'with Brahman' },
+            { t: 'एकताम्', m: 'identity' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'तत्त्वमस्यादिवाक्यानि',
+          m: 'such Vedic statements as “That Thou Art” etc.',
+          parts: [
+            { t: 'तत्त्वमसि', m: 'That Thou Art' },
+            { t: 'आदि', m: 'etc.' },
+            { t: 'वाक्यानि', m: 'statements' },
+          ],
+        },
+        {
+          t: 'जगुर्नेतरजीवयोः',
+          m: 'declare; not with the two other Jivas',
+          parts: [
+            { t: 'जगुः', m: 'declare' },
+            { t: 'न', m: 'not' },
+            { t: 'इतरजीवयोः', m: 'with the two other Jivas' },
+          ],
+        },
+        { t: '॥ ३४ ॥' },
+      ],
+    ],
+    transliteration:
+      'avacchinnasya jīvasya pūrṇena brahmaṇaikatām |\ntattvamasyādi-vākyāni jagur netara-jīvayoḥ || 34 ||',
+    translation:
+      'Such Vedic statements as “That Thou Art” etc. declare the identity of partless Brahman with the Jiva who appears as such from the standpoint of the ‘Theory of limitation’ (अवच्छेदवादः). But it does not agree with the other two views (of Jiva).',
+  },
+  {
+    number: 35,
+    lines: [
+      [
+        {
+          t: 'ब्रह्मण्यवस्थिता',
+          m: 'rests in Brahman',
+          parts: [
+            { t: 'ब्रह्मणि', m: 'in Brahman' },
+            { t: 'अवस्थिता', m: 'rests' },
+          ],
+        },
+        { t: 'माया', m: 'Māyā' },
+        {
+          t: 'विक्षेपावृतिरूपिणी',
+          m: 'characterised by projection and concealment',
+          parts: [
+            { t: 'विक्षेप', m: 'projection' },
+            { t: 'आवृति', m: 'concealment' },
+            { t: 'रूपिणी', m: 'characterised by' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'आवृत्याखण्डतां',
+          m: 'having concealed the indivisible nature',
+          parts: [
+            { t: 'आवृत्य', m: 'having concealed' },
+            { t: 'अखण्डतां', m: 'indivisible nature' },
+          ],
+        },
+        { t: 'तस्मिन्', m: 'in Brahman' },
+        {
+          t: 'जगज्जीवौ',
+          m: 'the world and the Jiva',
+          parts: [
+            { t: 'जगत्', m: 'world' },
+            { t: 'जीवौ', m: 'and the Jiva' },
+          ],
+        },
+        { t: 'प्रकल्पयेत्', m: 'imagines' },
+        { t: '॥ ३५ ॥' },
+      ],
+    ],
+    transliteration:
+      'brahmaṇy avasthitā māyā vikṣepāvṛti-rūpiṇī |\nāvṛtyākhaṇḍatāṃ tasmin jagaj jīvau prakalpayet || 35 ||',
+    // Reconstructed from the verse and the legible fragments of the gloss: this page of DDV.pdf is overprinted in the scan, so the PDF's own translation cannot be read.
+    translation:
+      'Māyā, which has the double aspect of projection and concealment, rests in Brahman. Having concealed the indivisible nature of Brahman, it imagines the world and the Jiva in It.',
+  },
 ]
