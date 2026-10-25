@@ -1027,6 +1027,8 @@ export const VERSES: Verse[] = [
       'tathā sarga-brahmaṇoś ca bhedam āvṛtya tiṣṭhati |\nyā śaktis tad-vaśād brahma vikṛtatvena bhāsate || 18 ||',
     translation:
       'Similarly, Brahman, through the influence of the power that conceals the distinction between It and the phenomenal universe, appears as endowed with the attributes of change.',
+    recitation: { src: '/audio/ddv-18-recitation.mp3', videoId: 'wmdxSh84EI8', start: 875, end: 902 },
+    commentary: { src: '/audio/ddv-18-commentary.mp3', videoId: 'wmdxSh84EI8', start: 902, end: 1219 },
   },
   {
     number: 19,
