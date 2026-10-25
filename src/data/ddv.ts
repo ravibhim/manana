@@ -829,6 +829,8 @@ export const VERSES: Verse[] = [
       'sṛṣṭir nāma brahma-rūpe sac-cid-ānanda-vastuni |\nabdhau phenādivat sarva-nāma-rūpa-prasāraṇā || 14 ||',
     translation:
       'The manifesting of all names and forms in the entity which is Existence-Consciousness-Bliss and which is the same as Brahman, like the foams etc. in the ocean, is known as creation.',
+    recitation: { src: '/audio/ddv-14-recitation.mp3', videoId: 'AiDa_7Blimg', start: 1390, end: 1419 },
+    commentary: { src: '/audio/ddv-14-commentary.mp3', videoId: 'AiDa_7Blimg', start: 1419, end: 2717 },
   },
   {
     number: 15,
