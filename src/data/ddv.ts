@@ -1240,6 +1240,8 @@ export const VERSES: Verse[] = [
       'upekṣya nāma-rūpe dve sac-cid-ānanda-tat-paraḥ |\nsamādhiṃ sarvadā kuryād hṛdaye vā ’thavā bahiḥ || 22 ||',
     translation:
       'Having become indifferent to name and form and being devoted to Satchidānanda, one should always practise concentration either within the heart or outside.',
+    recitation: { src: '/audio/ddv-22-recitation.mp3', videoId: 'bx9n8vccx38', start: 1195, end: 1223 },
+    commentary: { src: '/audio/ddv-22-commentary.mp3', videoId: 'bx9n8vccx38', start: 1223, end: 1437 },
   },
   {
     number: 23,
