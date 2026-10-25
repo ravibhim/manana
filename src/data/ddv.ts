@@ -892,4 +892,232 @@ export const VERSES: Verse[] = [
     recitation: { src: '/audio/ddv-15-recitation.mp3', videoId: 'AiDa_7Blimg', start: 2717, end: 2745 },
     commentary: { src: '/audio/ddv-15-commentary.mp3', videoId: 'AiDa_7Blimg', start: 2745, end: 3136 },
   },
+  {
+    number: 16,
+    lines: [
+      [
+        { t: 'साक्षिणः', m: 'of the Witness' },
+        { t: 'पुरतो', m: 'in immediate proximity' },
+        { t: 'भाति', m: 'shines' },
+        { t: 'लिंगं', m: 'the subtle body' },
+        { t: 'देहेन', m: 'with the (physical) body' },
+        { t: 'संयुतम्', m: 'related' },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'चितिच्छाया',
+          m: 'the reflection of Consciousness',
+          parts: [
+            { t: 'चिति', m: 'Consciousness' },
+            { t: 'छाया', m: 'reflection' },
+          ],
+        },
+        {
+          t: 'समावेशाज्जीवस्स्याद्व्यावहारिकः',
+          m: 'on account of being affected by it, the embodied self becomes empirical',
+          parts: [
+            { t: 'समावेशात्', m: 'on account of being affected by it' },
+            { t: 'जीवः', m: 'embodied self' },
+            { t: 'स्यात्', m: 'becomes' },
+            { t: 'व्यावहारिकः', m: 'empirical' },
+          ],
+        },
+        { t: '॥ १६ ॥' },
+      ],
+    ],
+    transliteration:
+      'sākṣiṇaḥ purato bhāti liṃgaṃ dehena saṃyutam |\nciti-cchāyā samāveśāj jīvas syād vyāvahārikaḥ || 16 ||',
+    translation:
+      'The subtle body (Lingam) which exists in close proximity to the Witness (Sākshin) identifying itself with the gross body becomes the embodied empirical self, on account of its being affected by the reflection of Consciousness.',
+  },
+  {
+    number: 17,
+    lines: [
+      [
+        { t: 'अस्य', m: 'of this (the empirical self)' },
+        {
+          t: 'जीवत्वमारोपात्साक्षिण्यप्यवभासते',
+          m: 'the nature of being a Jiva appears also in the Sākshin, through superimposition',
+          parts: [
+            { t: 'जीवत्वं', m: 'the nature of being a Jiva' },
+            { t: 'आरोपात्', m: 'through superimposition' },
+            { t: 'साक्षिणि', m: 'in the Sākshin' },
+            { t: 'अपि', m: 'also' },
+            { t: 'अवभासते', m: 'appears' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        { t: 'आवृतौ', m: 'of the veiling power' },
+        { t: 'तु', m: 'but' },
+        { t: 'विनष्टायां', m: 'by the annihilation' },
+        { t: 'भेदे', m: 'the difference' },
+        {
+          t: 'भातेऽपयाति',
+          m: 'having become clear, disappears',
+          parts: [
+            { t: 'भाते', m: 'having become clear' },
+            { t: 'अपयाति', m: 'disappears' },
+          ],
+        },
+        { t: 'तत्', m: 'that (the idea of being Jiva)' },
+        { t: '॥ १७ ॥' },
+      ],
+    ],
+    transliteration:
+      'asya jīvatvam āropāt sākṣiṇy apy avabhāsate |\nāvṛtau tu vinaṣṭāyāṃ bhede bhāte ’payāti tat || 17 ||',
+    translation:
+      'The character of an embodied self appears through false superimposition in the Sākshin also. With the disappearance of the veiling power, the distinction (between the seer and the object) becomes clear and with it the Jiva character of the Sākshin (Witness) disappears.',
+  },
+  {
+    number: 18,
+    lines: [
+      [
+        { t: 'तथा', m: 'similarly' },
+        {
+          t: 'सर्गब्रह्मणोश्च',
+          m: 'of the phenomenal universe and Brahman, and',
+          parts: [
+            { t: 'सर्ग', m: 'phenomenal universe' },
+            { t: 'ब्रह्मणोः', m: 'and Brahman, of' },
+            { t: 'च', m: 'and' },
+          ],
+        },
+        {
+          t: 'भेदमावृत्य',
+          m: 'concealing the distinction',
+          parts: [
+            { t: 'भेदं', m: 'distinction' },
+            { t: 'आवृत्य', m: 'concealing' },
+          ],
+        },
+        { t: 'तिष्ठति', m: 'exists' },
+        { t: '।' },
+      ],
+      [
+        { t: 'या', m: 'which' },
+        {
+          t: 'शक्तिस्तद्वशाद्ब्रह्म',
+          m: 'the power; through its influence, Brahman',
+          parts: [
+            { t: 'शक्तिः', m: 'power' },
+            { t: 'तद्वशात्', m: 'through its influence' },
+            { t: 'ब्रह्म', m: 'Brahman' },
+          ],
+        },
+        {
+          t: 'विकृतत्वेन',
+          m: 'as being of the nature of modification',
+          parts: [
+            { t: 'विकृत', m: 'modification' },
+            { t: 'त्वेन', m: 'as being of the nature of' },
+          ],
+        },
+        { t: 'भासते', m: 'appears' },
+        { t: '॥ १८ ॥' },
+      ],
+    ],
+    transliteration:
+      'tathā sarga-brahmaṇoś ca bhedam āvṛtya tiṣṭhati |\nyā śaktis tad-vaśād brahma vikṛtatvena bhāsate || 18 ||',
+    translation:
+      'Similarly, Brahman, through the influence of the power that conceals the distinction between It and the phenomenal universe, appears as endowed with the attributes of change.',
+  },
+  {
+    number: 19,
+    lines: [
+      [
+        {
+          t: 'अत्राप्यावृतिनाशेन',
+          m: 'in this case also, with the destruction of the veiling power',
+          parts: [
+            { t: 'अत्र', m: 'in this case' },
+            { t: 'अपि', m: 'also' },
+            { t: 'आवृति', m: 'veiling power' },
+            { t: 'नाशेन', m: 'with the destruction' },
+          ],
+        },
+        { t: 'विभाति', m: 'becomes clear' },
+        {
+          t: 'ब्रह्मसर्गयोः',
+          m: 'of Brahman and the phenomenal universe',
+          parts: [
+            { t: 'ब्रह्म', m: 'Brahman' },
+            { t: 'सर्गयोः', m: 'and the phenomenal universe, of' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'भेदस्तयोर्विकारस्स्यात्सर्गेन',
+          m: 'the distinction between the two; change exists in the phenomenal universe, not',
+          parts: [
+            { t: 'भेदः', m: 'distinction' },
+            { t: 'तयोः', m: 'between those two' },
+            { t: 'विकारः', m: 'change' },
+            { t: 'स्यात्', m: 'exists' },
+            { t: 'सर्गे', m: 'in the phenomenal universe' },
+            { t: 'न', m: 'not' },
+          ],
+        },
+        { t: 'ब्रह्मणि', m: 'in Brahman' },
+        { t: 'क्वचित्', m: 'ever' },
+        { t: '॥ १९ ॥' },
+      ],
+    ],
+    transliteration:
+      'atrāpy āvṛti-nāśena vibhāti brahma-sargayoḥ |\nbhedas tayor vikāras syāt sarge na brahmaṇi kvacit || 19 ||',
+    translation:
+      'In this case also, the distinction between Brahman and the phenomenal universe becomes clear with the disappearance of the veiling power. Therefore change is perceived in the phenomenal universe, but never in Brahman.',
+  },
+  {
+    number: 20,
+    lines: [
+      [
+        { t: 'अस्ति', m: '(it) exists' },
+        { t: 'भाति', m: '(it) shines (becomes cognizable)' },
+        { t: 'प्रियं', m: '(it is) dear' },
+        { t: 'रूपं', m: 'form' },
+        {
+          t: 'नामचेत्यंशपञ्चकम्',
+          m: 'name, and thus all these five aspects',
+          parts: [
+            { t: 'नाम', m: 'name' },
+            { t: 'च', m: 'and' },
+            { t: 'इति', m: 'thus' },
+            { t: 'अंशपञ्चकं', m: 'these five aspects' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        { t: 'आद्यत्रयं', m: 'the first three' },
+        {
+          t: 'ब्रह्मरूपं',
+          m: 'characteristics of Brahman',
+          parts: [
+            { t: 'ब्रह्म', m: 'Brahman' },
+            { t: 'रूपं', m: 'characteristics' },
+          ],
+        },
+        {
+          t: 'जगद्रूपं',
+          m: 'characteristics of the universe',
+          parts: [
+            { t: 'जगत्', m: 'universe' },
+            { t: 'रूपं', m: 'characteristics' },
+          ],
+        },
+        { t: 'ततो', m: 'the next' },
+        { t: 'द्वयम्', m: 'two' },
+        { t: '॥ २० ॥' },
+      ],
+    ],
+    transliteration:
+      'asti bhāti priyaṃ rūpaṃ nāma-cety-aṃśa-pañcakam |\nādya-trayaṃ brahma-rūpaṃ jagad-rūpaṃ tato dvayam || 20 ||',
+    translation:
+      'Every entity has five characteristics, viz., existence, cognizability, attractiveness, form and name. Of these, the first three belong to Brahman and the next two to the world.',
+  },
 ]
