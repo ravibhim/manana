@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BOOK, VERSES, type ClipKind } from '../data/ddv'
+import { BOOK, lineText, VERSES, type ClipKind } from '../data/ddv'
 import { nextListenCta, type ListenCta } from '../lib/progress'
 
 interface ContentsScreenProps {
@@ -31,7 +31,7 @@ export default function ContentsScreen({ onSelect }: ContentsScreenProps) {
               <span className="min-w-0">
                 {v.lines.map((line, i) => (
                   <span key={i} className="devanagari block text-[1.125rem] leading-8">
-                    {line.filter(t => t.m || t.t === '।').map(t => t.t).join(' ')}
+                    {lineText(line)}
                   </span>
                 ))}
               </span>

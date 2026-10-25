@@ -1,6 +1,9 @@
-// Sample content for screen design only. Source: "Drg-Drsya Viveka", Swami Nikhilananda
-// (Sri Ramakrishna Asrama, Mysore, 1931), DDV.pdf. Transliteration is ours, not from the PDF.
-// Audio clips live in public/audio and deploy with the app; verses without clips show no player.
+// Verse text, word meanings and translations: "Drg-Drsya Viveka", Swami Nikhilananda
+// (Sri Ramakrishna Asrama, Mysore, 1931), DDV.pdf.
+// Ours, not from the PDF: the transliteration and the compound breakdowns (`parts`). Both are our own
+// analysis and still need a Sanskrit reader's review.
+// Audio clips are cut from lecture recordings (see SOURCES.md). They live in public/audio and deploy
+// with the app; verses without clips show no player.
 
 export interface Token {
   /** The word as it appears in the verse (may be a joined compound). */
@@ -22,6 +25,9 @@ export interface Clip {
 /** The two kinds of audio a verse can have. */
 export type ClipKind = 'recitation' | 'commentary'
 
+/** A line of the verse as plain text: its words and the danda, without the closing verse-number marker. */
+export const lineText = (line: Token[]) => line.filter(t => t.m || t.t === '।').map(t => t.t).join(' ')
+
 export const clipLength = (clip: Clip) => clip.end - clip.start
 
 export interface Verse {
@@ -39,6 +45,8 @@ export const BOOK = {
   devanagari: 'दृग्दृश्य विवेकः',
   subtitle: 'An inquiry into the nature of the Seer and the Seen',
   author: 'Swami Nikhilananda',
+  /** Recites and explains the verses in the audio clips. */
+  lecturer: 'Swami Sarvapriyananda',
   totalVerses: 46,
 }
 

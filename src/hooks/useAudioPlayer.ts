@@ -4,6 +4,22 @@ import { DONE_MARGIN, readPosition, writePosition } from '../lib/progress'
 // Only one clip plays at a time.
 let current: HTMLAudioElement | null = null
 
+const SKIP_SECONDS = 15
+const SAVE_EVERY_SECONDS = 3
+
+/** Lets the lock screen and headphones show the clip's title and control it. */
+function registerMediaSession(audio: HTMLAudioElement, title: string, artist: string) {
+  if (!('mediaSession' in navigator)) return
+  const skipBy = (delta: number) => {
+    audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), audio.duration || 0)
+  }
+  navigator.mediaSession.metadata = new MediaMetadata({ title, artist })
+  navigator.mediaSession.setActionHandler('play', () => { audio.play() })
+  navigator.mediaSession.setActionHandler('pause', () => { audio.pause() })
+  navigator.mediaSession.setActionHandler('seekbackward', () => skipBy(-SKIP_SECONDS))
+  navigator.mediaSession.setActionHandler('seekforward', () => skipBy(SKIP_SECONDS))
+}
+
 interface Options {
   /** Shown on the lock screen. */
   title: string
@@ -40,7 +56,7 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
     let lastSaved = 0
     const onTime = () => {
       setTime(audio.currentTime)
-      if (Math.abs(audio.currentTime - lastSaved) >= 3) {
+      if (Math.abs(audio.currentTime - lastSaved) >= SAVE_EVERY_SECONDS) {
         lastSaved = audio.currentTime
         saveResume(audio.currentTime)
       }
@@ -50,11 +66,8 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
     const onPlay = () => setPlaying(true)
     const onPause = () => setPlaying(false)
 
-    audio.addEventListener('loadedmetadata', onMeta)
-    audio.addEventListener('timeupdate', onTime)
-    audio.addEventListener('ended', onEnded)
-    audio.addEventListener('play', onPlay)
-    audio.addEventListener('pause', onPause)
+    const listeners = { loadedmetadata: onMeta, timeupdate: onTime, ended: onEnded, play: onPlay, pause: onPause }
+    for (const [type, listener] of Object.entries(listeners)) audio.addEventListener(type, listener)
 
     return () => {
       // Before metadata loads currentTime is 0, which would wipe the saved position.
@@ -62,11 +75,7 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
       audio.pause()
       audio.removeAttribute('src')
       audio.load()
-      audio.removeEventListener('loadedmetadata', onMeta)
-      audio.removeEventListener('timeupdate', onTime)
-      audio.removeEventListener('ended', onEnded)
-      audio.removeEventListener('play', onPlay)
-      audio.removeEventListener('pause', onPause)
+      for (const [type, listener] of Object.entries(listeners)) audio.removeEventListener(type, listener)
       if (current === audio) current = null
       audioRef.current = null
       setPlaying(false)
@@ -74,12 +83,6 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
       setDuration(0)
     }
   }, [src, resumeKey, saveResume])
-
-  const skip = useCallback((delta: number) => {
-    const audio = audioRef.current
-    if (!audio) return
-    audio.currentTime = Math.min(Math.max(0, audio.currentTime + delta), audio.duration || 0)
-  }, [])
 
   const seek = useCallback((t: number) => {
     if (audioRef.current) audioRef.current.currentTime = t
@@ -96,15 +99,8 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
     if (current && current !== audio) current.pause()
     current = audio
     audio.play().catch(() => setPlaying(false))
-
-    if ('mediaSession' in navigator) {
-      navigator.mediaSession.metadata = new MediaMetadata({ title, artist })
-      navigator.mediaSession.setActionHandler('play', () => { audio.play() })
-      navigator.mediaSession.setActionHandler('pause', () => { audio.pause() })
-      navigator.mediaSession.setActionHandler('seekbackward', () => skip(-15))
-      navigator.mediaSession.setActionHandler('seekforward', () => skip(15))
-    }
-  }, [title, artist, skip])
+    registerMediaSession(audio, title, artist)
+  }, [title, artist])
 
   return { time, duration, playing, toggle, seek }
 }

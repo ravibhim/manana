@@ -69,10 +69,10 @@ function CommentaryCard({ player }: { player: Player }) {
 export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack }: VerseScreenProps) {
   const verse = VERSES.find(v => v.number === verseNumber)!
   const title = `${BOOK.title} · Verse ${verse.number}`
-  const recitation = useAudioPlayer(verse.recitation?.src, { title: `${title} — Recitation`, artist: BOOK.author })
+  const recitation = useAudioPlayer(verse.recitation?.src, { title: `${title} — Recitation`, artist: BOOK.lecturer })
   const commentary = useAudioPlayer(verse.commentary?.src, {
     title: `${title} — Commentary`,
-    artist: 'Swami',
+    artist: BOOK.lecturer,
     resumeKey: commentaryResumeKey(verse.number),
   })
   useEffect(() => {
