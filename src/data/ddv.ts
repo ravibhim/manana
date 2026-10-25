@@ -207,10 +207,10 @@ export const VERSES: Verse[] = [
         },
         {
           t: 'श्रद्धाश्रद्धे',
-          m: 'faith and want of faith',
+          m: 'faith and lack of faith',
           parts: [
             { t: 'श्रद्धा', m: 'faith' },
-            { t: 'अश्रद्धे', m: 'and want of faith' },
+            { t: 'अश्रद्धे', m: 'and lack of faith' },
           ],
         },
         {
@@ -236,11 +236,10 @@ export const VERSES: Verse[] = [
           ],
         },
         {
-          t: 'भासयेत्येकधा',
+          t: 'भासयत्येकधा',
           m: 'illumines, unified',
           parts: [
-            { t: 'भासयेत्', m: 'illumines' },
-            { t: 'इति', m: '(quotation marker)' },
+            { t: 'भासयति', m: 'illumines' },
             { t: 'एकधा', m: 'unified' },
           ],
         },
@@ -249,7 +248,7 @@ export const VERSES: Verse[] = [
       ],
     ],
     transliteration:
-      'kāmaḥ saṃkalpa-saṃdehau śraddhā-aśraddhe dhṛti-itare |\nhrīr dhīr bhīr ity evamādīn bhāsayety ekadhā citiḥ || 4 ||',
+      'kāmaḥ saṃkalpa-saṃdehau śraddhā-aśraddhe dhṛti-itare |\nhrīr dhīr bhīr ity evamādīn bhāsayaty ekadhā citiḥ || 4 ||',
     translation:
       'Consciousness illumines (such other mental states as) desire, determination and doubt, belief and non-belief, constancy and its opposite, modesty, understanding, fear and others, because it (Consciousness) is a unity.',
     recitation: { src: '/audio/ddv-4-recitation.mp3', videoId: 'm6kALQlK6-Q', start: 1060, end: 1093 },
