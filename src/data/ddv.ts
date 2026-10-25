@@ -1398,5 +1398,7 @@ export const VERSES: Verse[] = [
       'asaṅgas sac-cid-ānandas sva-prabho dvaita-varjitaḥ |\nasmīti śabda-viddho ’yaṃ samādhis savikalpakaḥ || 25 ||',
     translation:
       'I am Existence-Consciousness-Bliss, unattached, self-luminous and free from duality. This is known as the (other kind of) Savikalpa Samādhi associated with sound (object).',
+    recitation: { src: '/audio/ddv-25-recitation.mp3', videoId: 'bx9n8vccx38', start: 2481, end: 2508 },
+    commentary: { src: '/audio/ddv-25-commentary.mp3', videoId: 'bx9n8vccx38', start: 2508, end: 3369 },
   },
 ]
