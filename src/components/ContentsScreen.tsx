@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { AutoPlay } from '../App'
 import { BOOK, VERSES } from '../data/ddv'
-import { commentaryCta, type CommentaryCta } from '../lib/progress'
-import { formatTime } from '../lib/time'
+import { nextListenCta, type ListenCta } from '../lib/progress'
 
 interface ContentsScreenProps {
   onSelect: (verseNumber: number, autoPlay?: AutoPlay) => void
@@ -10,8 +9,8 @@ interface ContentsScreenProps {
 
 export default function ContentsScreen({ onSelect }: ContentsScreenProps) {
   // Read after mount so the position saved when leaving a verse is already written.
-  const [cta, setCta] = useState<CommentaryCta | null>(null)
-  useEffect(() => setCta(commentaryCta()), [])
+  const [cta, setCta] = useState<ListenCta | null>(null)
+  useEffect(() => setCta(nextListenCta()), [])
 
   return (
     <div className="mx-auto max-w-xl px-6 pt-14 pb-16">
@@ -40,15 +39,13 @@ export default function ContentsScreen({ onSelect }: ContentsScreenProps) {
             </button>
             {cta?.verse === v.number && (
               <button
-                onClick={() => onSelect(cta.verse, cta.kind === 'resume' ? 'commentary' : 'recitation')}
+                onClick={() => onSelect(cta.verse, cta.play)}
                 className="mb-5 ml-11 flex items-center gap-4 rounded-2xl bg-[#3d2b1f] px-4 py-3 text-left text-[#faf7f2] active:opacity-80 transition-opacity"
               >
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#faf7f2] text-[#3d2b1f]">▶</span>
                 <span>
-                  <span className="block font-medium">{cta.kind === 'resume' ? 'Resume Commentary' : 'Listen Recitation'}</span>
-                  <span className="block text-sm text-[#faf7f2]/60">
-                    {formatTime(cta.left)}{cta.kind === 'resume' && ' left'}
-                  </span>
+                  <span className="block font-medium">{cta.label}</span>
+                  <span className="block text-sm text-[#faf7f2]/60">{cta.detail}</span>
                 </span>
               </button>
             )}

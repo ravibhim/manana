@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { DONE_MARGIN, readPosition, writePosition } from '../lib/progress'
 
 // Only one clip plays at a time.
 let current: HTMLAudioElement | null = null
@@ -18,8 +19,7 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
   const [playing, setPlaying] = useState(false)
 
   const saveResume = useCallback((t: number) => {
-    if (!resumeKey) return
-    try { localStorage.setItem(resumeKey, String(t)) } catch { /* storage unavailable */ }
+    if (resumeKey) writePosition(resumeKey, t)
   }, [resumeKey])
 
   useEffect(() => {
@@ -30,9 +30,9 @@ export function useAudioPlayer(src: string | undefined, { title, artist, resumeK
 
     const onMeta = () => {
       setDuration(audio.duration)
-      let resume = 0
-      try { resume = parseFloat(localStorage.getItem(resumeKey ?? '') ?? '0') || 0 } catch { /* ignore */ }
-      if (resumeKey && resume > 0 && resume < audio.duration - 2) {
+      // A finished clip (within DONE_MARGIN of the end) starts over instead of resuming.
+      const resume = resumeKey ? readPosition(resumeKey) : 0
+      if (resume > 0 && resume < audio.duration - DONE_MARGIN) {
         audio.currentTime = resume
         setTime(resume)
       }

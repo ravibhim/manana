@@ -19,6 +19,8 @@ export interface Clip {
   end: number
 }
 
+export const clipLength = (clip: Clip) => clip.end - clip.start
+
 export interface Verse {
   number: number
   /** Each inner array is one line of the verse. */

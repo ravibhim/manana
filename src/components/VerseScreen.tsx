@@ -3,7 +3,7 @@ import type { AutoPlay } from '../App'
 import { BOOK, VERSES, type Token } from '../data/ddv'
 import { useAudioPlayer } from '../hooks/useAudioPlayer'
 import { formatTime } from '../lib/time'
-import { resumeKey } from '../lib/progress'
+import { resumeKey, STARTED_AFTER } from '../lib/progress'
 import type { Player } from '../hooks/useAudioPlayer'
 
 interface VerseScreenProps {
@@ -35,7 +35,7 @@ function CommentaryCard({ player }: { player: Player }) {
   const pct = player.duration ? (player.time / player.duration) * 100 : 0
   const status = player.playing
     ? `${formatTime(player.time)} / ${formatTime(player.duration)}`
-    : player.time > 2
+    : player.time > STARTED_AFTER
       ? `Resume · ${formatTime(player.time)} / ${formatTime(player.duration)}`
       : formatTime(player.duration)
   return (
