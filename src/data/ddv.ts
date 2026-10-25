@@ -1401,4 +1401,237 @@ export const VERSES: Verse[] = [
     recitation: { src: '/audio/ddv-25-recitation.mp3', videoId: 'bx9n8vccx38', start: 2481, end: 2508 },
     commentary: { src: '/audio/ddv-25-commentary.mp3', videoId: 'bx9n8vccx38', start: 2508, end: 3369 },
   },
+  {
+    number: 26,
+    lines: [
+      [
+        {
+          t: 'स्वानुभूतिरसावेशाद्',
+          m: 'on account of complete absorption in the bliss of realization of the Self',
+          parts: [
+            { t: 'स्वानुभूति', m: 'realization of the Self' },
+            { t: 'रस', m: 'bliss' },
+            { t: 'आवेशाद्', m: 'on account of absorption' },
+          ],
+        },
+        {
+          t: 'दृश्यशब्दावुपेक्ष्यतु',
+          m: 'but, being indifferent to both the perceived objects and sounds',
+          parts: [
+            { t: 'दृश्यशब्दौ', m: 'both the perceived objects and sounds' },
+            { t: 'उपेक्ष्य', m: 'being indifferent to' },
+            { t: 'तु', m: 'but' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'निर्विकल्पस्समाधिस्स्यान्निवातास्थितदीपवत्',
+          m: 'Nirvikalpa Samādhi is absorption free from ideas, like a flame in a place free from wind',
+          parts: [
+            { t: 'निर्विकल्पः', m: 'free from ideas (Nirvikalpa)' },
+            { t: 'समाधिः', m: 'absorption (Samādhi)' },
+            { t: 'स्यात्', m: 'is' },
+            { t: 'निवातास्थितदीपवत्', m: 'like a flame in a place free from wind' },
+          ],
+        },
+        { t: '॥ २६ ॥' },
+      ],
+    ],
+    transliteration:
+      'svānubhūti-rasāveśād dṛśya-śabdāv upekṣya tu |\nnirvikalpas samādhis syān nivātāsthita-dīpavat || 26 ||',
+    translation:
+      'But the Nirvikalpa Samādhi is that in which the mind becomes steady like the (unflickering flame of a) light kept in a place free from wind and in which the student becomes indifferent to both objects and sounds on account of his complete absorption in the bliss of the realization of the Self.',
+  },
+  {
+    number: 27,
+    lines: [
+      [
+        { t: 'हृदीव', m: 'as in the heart' },
+        {
+          t: 'बाह्यदेशेऽपि',
+          m: 'in the external region as well',
+          parts: [
+            { t: 'बाह्य', m: 'external' },
+            { t: 'देशे', m: 'in the region' },
+            { t: 'अपि', m: 'also' },
+          ],
+        },
+        {
+          t: 'यस्मिन्कस्मिंश्च',
+          m: 'in any whatsoever',
+          parts: [
+            { t: 'यस्मिन्', m: 'in whichever' },
+            { t: 'कस्मिन्', m: 'in any' },
+            { t: 'च', m: 'and' },
+          ],
+        },
+        { t: 'वस्तुनि', m: 'object' },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'समाधिराद्यस्सन्मात्रान्नामरूपपृथक्कृतिः',
+          m: 'the first kind of Samādhi is possible; from Pure Existence, the separation of names and forms',
+          parts: [
+            { t: 'समाधिः', m: 'concentration (Samādhi)' },
+            { t: 'आद्यः', m: 'of the first kind' },
+            { t: 'सन्मात्रात्', m: 'from the Pure Existence (Brahman)' },
+            { t: 'नामरूपपृथक्कृतिः', m: 'the separation of names and forms' },
+          ],
+        },
+        { t: '॥ २७ ॥' },
+      ],
+    ],
+    transliteration:
+      'hṛdīva bāhya-deśe ’pi yasmin kasmiṃś ca vastuni |\nsamādhir ādyas san-mātrān nāma-rūpa-pṛthak-kṛtiḥ || 27 ||',
+    translation:
+      'The first kind of Samādhi is possible with the help of any external object as it is with the help of an internal object. In that Samādhi the name and form are separated from what is Pure Existence (Brahman).',
+  },
+  {
+    number: 28,
+    lines: [
+      [
+        {
+          t: 'अखंडैकरसं',
+          m: 'of the same nature (always) and unlimited',
+          parts: [
+            { t: 'अखंड', m: 'unlimited' },
+            { t: 'एक', m: 'one' },
+            { t: 'रसं', m: 'nature (essence)' },
+          ],
+        },
+        { t: 'वस्तु', m: 'entity' },
+        {
+          t: 'सच्चिदानन्दलक्षणम्',
+          m: 'characterised by Existence-Consciousness-Bliss',
+          parts: [
+            { t: 'सत्', m: 'existence' },
+            { t: 'चित्', m: 'consciousness' },
+            { t: 'आनन्द', m: 'bliss' },
+            { t: 'लक्षणम्', m: 'characterised by' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'इत्यविच्छिन्नचिंतेयं',
+          m: 'thus, such uninterrupted reflection',
+          parts: [
+            { t: 'इति', m: 'thus' },
+            { t: 'अविच्छिन्न', m: 'uninterrupted' },
+            { t: 'चिंता', m: 'reflection' },
+            { t: 'इयं', m: 'such' },
+          ],
+        },
+        {
+          t: 'समाधिर्मध्यमो',
+          m: 'the middle (intermediate) Samādhi',
+          parts: [
+            { t: 'समाधिः', m: 'concentration (Samādhi)' },
+            { t: 'मध्यमः', m: 'middle' },
+          ],
+        },
+        { t: 'भवेत्', m: 'is' },
+        { t: '॥ २८ ॥' },
+      ],
+    ],
+    transliteration:
+      'akhaṃḍaika-rasaṃ vastu sac-cid-ānanda-lakṣaṇam |\nity avicchinna-ciṃteyaṃ samādhir madhyamo bhavet || 28 ||',
+    translation:
+      'The entity which is (always) of the same nature and unlimited (by time, space etc.) and which is characterised by Existence-Consciousness-Bliss, is verily Brahman. Such uninterrupted reflection is called the intermediate absorption, that is, the Savikalpaka Samādhi associated with sound (object).',
+  },
+  {
+    number: 29,
+    lines: [
+      [
+        {
+          t: 'स्तब्धीभावो',
+          m: 'insensibility (to external objects)',
+          parts: [
+            { t: 'स्तब्धी', m: 'insensible' },
+            { t: 'भावः', m: 'state' },
+          ],
+        },
+        {
+          t: 'रसास्वादात्तृतीयः',
+          m: 'from the experience of Bliss, the third (kind of Samādhi)',
+          parts: [
+            { t: 'रसास्वादात्', m: 'from the experience of Bliss' },
+            { t: 'तृतीयः', m: 'the third (kind of Samādhi)' },
+          ],
+        },
+        {
+          t: 'पूर्ववन्मतः',
+          m: 'as in the previous instance, described',
+          parts: [
+            { t: 'पूर्ववत्', m: 'as in the previous instance' },
+            { t: 'मतः', m: 'described' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'एतैस्समाधिभिष्षड्भिर्नयेत्कालं',
+          m: 'by these six kinds of Samādhi, should spend time',
+          parts: [
+            { t: 'एतैः', m: 'by these' },
+            { t: 'समाधिभिः', m: 'kinds of Samādhi' },
+            { t: 'षड्भिः', m: 'six' },
+            { t: 'नयेत्', m: 'should spend' },
+            { t: 'कालं', m: 'time' },
+          ],
+        },
+        { t: 'निरंतरम्', m: 'always' },
+        { t: '॥ २९ ॥' },
+      ],
+    ],
+    transliteration:
+      'stabdhī-bhāvo rasāsvādāt tṛtīyaḥ pūrvavan mataḥ |\netais samādhibhiṣ ṣaḍbhir nayet kālaṃ nirantaram || 29 ||',
+    translation:
+      'The insensibility of the mind (to external objects) as before, on account of the experience of Bliss, is designated as the third kind of Samādhi (Nirvikalpaka). The practitioner should uninterruptedly spend his time in these six kinds of Samādhi.',
+  },
+  {
+    number: 30,
+    lines: [
+      [
+        {
+          t: 'देहाभिमाने',
+          m: 'in the attachment to the body',
+          parts: [
+            { t: 'देह', m: 'body' },
+            { t: 'अभिमाने', m: 'in the attachment' },
+          ],
+        },
+        { t: 'गलिते', m: 'with the disappearance' },
+        { t: 'विज्ञाते', m: 'with the realization' },
+        {
+          t: 'परमात्मनि',
+          m: 'of the Supreme Self',
+          parts: [
+            { t: 'परम', m: 'Supreme' },
+            { t: 'आत्मनि', m: 'in the Self' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        { t: 'यत्र', m: 'to whatever (object)' },
+        { t: 'यत्र', m: 'to whatever (object)' },
+        { t: 'मनो', m: 'mind' },
+        { t: 'याति', m: 'goes' },
+        { t: 'तत्र', m: 'there' },
+        { t: 'तत्र', m: 'there' },
+        { t: 'समाधयः', m: 'absorptions (Samādhi)' },
+        { t: '॥ ३० ॥' },
+      ],
+    ],
+    transliteration:
+      'dehābhimāne galite vijñāte paramātmani |\nyatra yatra mano yāti tatra tatra samādhayaḥ || 30 ||',
+    translation:
+      'With the disappearance of the attachment to the body and with the realization of the Supreme Self, to whatever object the mind is directed one experiences Samādhi.',
+  },
 ]
