@@ -21,9 +21,9 @@ function RecitationPill({ player }: { player: Player }) {
     <button
       onClick={player.toggle}
       aria-label={player.playing ? 'Pause recitation' : 'Play recitation'}
-      className="relative mx-auto flex items-center gap-3 overflow-hidden rounded-full bg-[#f0e6d4] px-8 py-4 active:scale-95 transition-transform"
+      className="relative mx-auto flex items-center gap-3 overflow-hidden rounded-full bg-sand px-8 py-4 active:scale-95 transition-transform"
     >
-      <span className="absolute inset-y-0 left-0 bg-[#e0cfa8]" style={{ width: `${pct}%` }} />
+      <span className="absolute inset-y-0 left-0 bg-sand-deep" style={{ width: `${pct}%` }} />
       <span className="relative text-3xl leading-none">{player.playing ? '❚❚' : '▶'}</span>
       <span className="relative text-lg font-medium">Recitation</span>
     </button>
@@ -39,18 +39,18 @@ function CommentaryCard({ player }: { player: Player }) {
       ? `Resume · ${formatTime(player.time)} / ${formatTime(player.duration)}`
       : formatTime(player.duration)
   return (
-    <div className="rounded-2xl bg-[#f0e6d4]/60 px-5 py-3">
+    <div className="rounded-2xl bg-sand/60 px-5 py-3">
       <div className="flex items-center gap-4">
         <button
           onClick={player.toggle}
           aria-label={player.playing ? 'Pause commentary' : 'Play commentary'}
-          className="h-14 w-14 shrink-0 rounded-full bg-[#3d2b1f] text-lg text-[#faf7f2] active:scale-90 transition-transform"
+          className="h-14 w-14 shrink-0 rounded-full bg-ink text-lg text-paper active:scale-90 transition-transform"
         >
           {player.playing ? '❚❚' : '▶'}
         </button>
         <div className="min-w-0 flex-1">
-          <p className="text-xs tracking-widest text-[#8b6914] uppercase">Commentary</p>
-          <p className="text-sm whitespace-nowrap text-[#3d2b1f]/70">{status}</p>
+          <p className="text-xs tracking-widest text-gold uppercase">Commentary</p>
+          <p className="text-sm whitespace-nowrap text-ink/70">{status}</p>
         </div>
       </div>
       <input
@@ -93,11 +93,11 @@ export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack 
 
   return (
     <div className="mx-auto flex min-h-[100dvh] max-w-xl flex-col px-6 pt-8 pb-20">
-      <nav className="flex items-center justify-between text-[#3d2b1f]/70">
+      <nav className="flex items-center justify-between text-ink/70">
         <button onClick={onBack} className="py-2 text-sm active:opacity-50">← Contents</button>
         <div className="flex items-center">
           <button className={navBtn} disabled={!prev} onClick={() => prev && onNavigate(prev.number)} aria-label="Previous verse">‹</button>
-          <span className="w-24 text-center text-sm text-[#8b6914]">Verse {verse.number} of {BOOK.totalVerses}</span>
+          <span className="w-24 text-center text-sm text-gold">Verse {verse.number} of {BOOK.totalVerses}</span>
           <button className={navBtn} disabled={!next} onClick={() => next && onNavigate(next.number)} aria-label="Next verse">›</button>
         </div>
       </nav>
@@ -116,21 +116,21 @@ export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack 
                     onClick={() => setActiveWord(activeWord?.t === tok.t ? null : tok)}
                     className={`mx-[0.15em] rounded px-1 ${
                       activeWord?.t === tok.t
-                        ? 'bg-[#8b6914]/20'
-                        : 'underline decoration-dotted decoration-[#8b6914]/40 underline-offset-[0.5em]'
+                        ? 'bg-gold/20'
+                        : 'underline decoration-dotted decoration-gold/40 underline-offset-[0.5em]'
                     }`}
                   >
                     {tok.t}
                   </button>
                 ) : (
-                  <span key={ti} className="mx-[0.15em] text-[#3d2b1f]/50">{tok.t}</span>
+                  <span key={ti} className="mx-[0.15em] text-ink/50">{tok.t}</span>
                 ),
               )}
             </p>
           ))}
         </div>
 
-        <p className="mt-6 whitespace-pre-line text-[1.0625rem] leading-7 text-[#3d2b1f]/60 italic">
+        <p className="mt-6 whitespace-pre-line text-[1.0625rem] leading-7 text-ink/60 italic">
           {verse.transliteration}
         </p>
       </section>
@@ -144,7 +144,7 @@ export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack 
               {activeWord.parts.map((p, i) => (
                 <li key={i}>
                   <span className="devanagari text-[1.25rem]">{p.t}</span>
-                  <span className="mx-1.5 text-[#3d2b1f]/40">—</span>
+                  <span className="mx-1.5 text-ink/40">—</span>
                   {p.m}
                 </li>
               ))}
@@ -153,7 +153,7 @@ export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack 
         ) : (
           <p className="text-[1.0625rem] leading-6">
             <span className="devanagari text-[1.25rem]">{activeWord.t}</span>
-            <span className="mx-2 text-[#3d2b1f]/40">—</span>
+            <span className="mx-2 text-ink/40">—</span>
             {activeWord.m}
           </p>
         )}
@@ -164,7 +164,7 @@ export default function VerseScreen({ verseNumber, autoPlay, onNavigate, onBack 
 
       {/* Translation */}
       <section className="mt-8">
-        <h2 className="text-xs tracking-widest text-[#8b6914] uppercase">Meaning</h2>
+        <h2 className="text-xs tracking-widest text-gold uppercase">Meaning</h2>
         <p className="mt-3 text-[1.0625rem] leading-7">{verse.translation}</p>
       </section>
 

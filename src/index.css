@@ -1,9 +1,18 @@
 @import 'tailwindcss';
 
+/* The palette: use these (text-ink, bg-paper, ...) instead of raw hex values. */
+@theme {
+  --color-ink: #3d2b1f;
+  --color-gold: #8b6914;
+  --color-paper: #faf7f2;
+  --color-sand: #f0e6d4;
+  --color-sand-deep: #e0cfa8;
+}
+
 html, body {
   margin: 0;
-  background: #faf7f2;
-  color: #3d2b1f;
+  background: var(--color-paper);
+  color: var(--color-ink);
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -16,8 +25,8 @@ html, body {
 
 /* Commentary seek bar: a thick track and a large thumb so it's easy to hit with a thumb. */
 .seek { -webkit-appearance: none; appearance: none; height: 2.25rem; background: transparent; cursor: pointer; }
-.seek::-webkit-slider-runnable-track { height: 0.5rem; border-radius: 9999px; background: linear-gradient(to right, #8b6914 var(--pct, 0%), rgba(61, 43, 31, 0.15) var(--pct, 0%)); }
-.seek::-webkit-slider-thumb { -webkit-appearance: none; height: 1.5rem; width: 1.5rem; margin-top: -0.5rem; border-radius: 9999px; background: #8b6914; border: 3px solid #faf7f2; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
-.seek::-moz-range-track { height: 0.5rem; border-radius: 9999px; background: rgba(61, 43, 31, 0.15); }
-.seek::-moz-range-progress { height: 0.5rem; border-radius: 9999px; background: #8b6914; }
-.seek::-moz-range-thumb { height: 1.25rem; width: 1.25rem; border-radius: 9999px; background: #8b6914; border: 3px solid #faf7f2; }
+.seek::-webkit-slider-runnable-track { height: 0.5rem; border-radius: 9999px; background: linear-gradient(to right, var(--color-gold) var(--pct, 0%), color-mix(in srgb, var(--color-ink) 15%, transparent) var(--pct, 0%)); }
+.seek::-webkit-slider-thumb { -webkit-appearance: none; height: 1.5rem; width: 1.5rem; margin-top: -0.5rem; border-radius: 9999px; background: var(--color-gold); border: 3px solid var(--color-paper); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+.seek::-moz-range-track { height: 0.5rem; border-radius: 9999px; background: color-mix(in srgb, var(--color-ink) 15%, transparent); }
+.seek::-moz-range-progress { height: 0.5rem; border-radius: 9999px; background: var(--color-gold); }
+.seek::-moz-range-thumb { height: 1.25rem; width: 1.25rem; border-radius: 9999px; background: var(--color-gold); border: 3px solid var(--color-paper); }
