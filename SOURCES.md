@@ -14,6 +14,7 @@ Lecture recordings that the audio clips in `public/audio/` are cut from. The rec
 | [`QOheqKTZxt4`](https://www.youtube.com/watch?v=QOheqKTZxt4) | Introduction to Vedanta Part 6 - Swami Sarvapriyananda - March 22, 2016 | Vedanta Society of Southern California | 2016-04-01 | 1:06:52 | 16-17 | `c42403288580ee7c259340532cbbc9bd0f8a461b595551aa6bb594cf3c0509b5` |
 | [`wmdxSh84EI8`](https://www.youtube.com/watch?v=wmdxSh84EI8) | Introduction to Vedanta - Part 7 - Swami Sarvapriyananda - April 19, 2016 | Vedanta Society of Southern California | 2016-04-24 | 1:03:33 | 18-20 | `d457e71d151109227f3ee5cc58e2eb8ea52c1360b3ef585af00c7c3d317dc001` |
 | [`bx9n8vccx38`](https://www.youtube.com/watch?v=bx9n8vccx38) | Introduction to Vedanta Part 8 - Swami Sarvapriyananda - April 26, 2016 | Vedanta Society of Southern California | 2016-04-27 | 1:03:52 | 21-25 | `87b9f9eff42f661a56ba2a3004ebc6d4c4a3f25e2dc17c9a30a2906c07d90a69` |
+| [`k5BEuDPDUFc`](https://www.youtube.com/watch?v=k5BEuDPDUFc) | Introduction to Vedanta Part 9 - Swami Sarvapriyananda - May 17, 2016 | Vedanta Society of Southern California | 2016-05-20 | 58:17 | 26 | `7161b80182ee16b10122bfa2e429326d440e63bc111af38b2103ec55ad73ba0c` |
 
 The verse text, word meanings and translations come from `DDV.pdf` (Swami Nikhilananda, Sri Ramakrishna Asrama, Mysore, 1931), also kept locally.
 

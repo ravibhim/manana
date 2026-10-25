@@ -1443,6 +1443,8 @@ export const VERSES: Verse[] = [
       'svānubhūti-rasāveśād dṛśya-śabdāv upekṣya tu |\nnirvikalpas samādhis syān nivātāsthita-dīpavat || 26 ||',
     translation:
       'But the Nirvikalpa Samādhi is that in which the mind becomes steady like the (unflickering flame of a) light kept in a place free from wind and in which the student becomes indifferent to both objects and sounds on account of his complete absorption in the bliss of the realization of the Self.',
+    recitation: { src: '/audio/ddv-26-recitation.mp3', videoId: 'k5BEuDPDUFc', start: 152, end: 180 },
+    commentary: { src: '/audio/ddv-26-commentary.mp3', videoId: 'k5BEuDPDUFc', start: 180, end: 1535 },
   },
   {
     number: 27,
