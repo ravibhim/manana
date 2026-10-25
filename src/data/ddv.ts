@@ -1599,6 +1599,8 @@ export const VERSES: Verse[] = [
       'stabdhī-bhāvo rasāsvādāt tṛtīyaḥ pūrvavan mataḥ |\netais samādhibhiṣ ṣaḍbhir nayet kālaṃ nirantaram || 29 ||',
     translation:
       'The insensibility of the mind (to external objects) as before, on account of the experience of Bliss, is designated as the third kind of Samādhi (Nirvikalpaka). The practitioner should uninterruptedly spend his time in these six kinds of Samādhi.',
+    recitation: { src: '/audio/ddv-29-recitation.mp3', videoId: 'k5BEuDPDUFc', start: 3119, end: 3146 },
+    commentary: { src: '/audio/ddv-29-commentary.mp3', videoId: 'k5BEuDPDUFc', start: 3146, end: 3327 },
   },
   {
     number: 30,
