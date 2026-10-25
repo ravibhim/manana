@@ -608,4 +608,280 @@ export const VERSES: Verse[] = [
     recitation: { src: '/audio/ddv-10-recitation.mp3', videoId: 'ASH1rD2jOXk', start: 839, end: 869 },
     commentary: { src: '/audio/ddv-10-commentary.mp3', videoId: 'ASH1rD2jOXk', start: 869, end: 1364 },
   },
+  {
+    number: 11,
+    lines: [
+      [
+        {
+          t: 'अंतःकरणवृत्तिश्च',
+          m: 'the inner organ, which is nothing but a modification',
+          parts: [
+            { t: 'अंतःकरण', m: 'inner organ' },
+            { t: 'वृत्तिः', m: 'modification' },
+            { t: 'च', m: 'and' },
+          ],
+        },
+        {
+          t: 'चितिच्छायैक्यमागता',
+          m: 'having attained identity with the reflection of Consciousness',
+          parts: [
+            { t: 'चिति', m: 'Consciousness' },
+            { t: 'छाया', m: 'reflection' },
+            { t: 'ऐक्यम्', m: 'identity' },
+            { t: 'आगता', m: 'having attained' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        { t: 'वासनाः', m: 'ideas' },
+        {
+          t: 'कल्पयेत्स्वप्ने',
+          m: 'imagines in the dream',
+          parts: [
+            { t: 'कल्पयेत्', m: 'imagines' },
+            { t: 'स्वप्ने', m: 'in the dream' },
+          ],
+        },
+        {
+          t: 'बोधेऽक्षैर्विषयान्बहिः',
+          m: 'in the waking state, external objects with respect to the sense-organs',
+          parts: [
+            { t: 'बोधे', m: 'in the waking state' },
+            { t: 'अक्षैः', m: 'with respect to the sense-organs' },
+            { t: 'विषयान्', m: 'objects' },
+            { t: 'बहिः', m: 'external' },
+          ],
+        },
+        { t: '॥ ११ ॥' },
+      ],
+    ],
+    transliteration:
+      'antaḥkaraṇa-vṛttiś ca citi-cchāyaikyam āgatā |\nvāsanāḥ kalpayet svapne bodhe ’kṣair viṣayān bahiḥ || 11 ||',
+    translation:
+      'The inner organ (mind) which is itself but a modification (वृत्तिः) identifying itself with the reflection of Consciousness imagines (various) ideas in the dream. And the same inner organ (identifying itself with the body) imagines objects external to itself in the waking state with respect to the sense-organs.',
+    recitation: { src: '/audio/ddv-11-recitation.mp3', videoId: 'ASH1rD2jOXk', start: 1365, end: 1394 },
+    commentary: { src: '/audio/ddv-11-commentary.mp3', videoId: 'ASH1rD2jOXk', start: 1394, end: 1870 },
+  },
+  {
+    number: 12,
+    lines: [
+      [
+        {
+          t: 'मनोऽहंकृत्युपादानं',
+          m: 'the material cause of mind and egoism',
+          parts: [
+            { t: 'मनः', m: 'mind' },
+            { t: 'अहंकृति', m: 'egoism' },
+            { t: 'उपादानं', m: 'material cause' },
+          ],
+        },
+        {
+          t: 'लिंगमेकं',
+          m: 'the subtle (body), one',
+          parts: [
+            { t: 'लिंगं', m: 'subtle (body)' },
+            { t: 'एकं', m: 'one' },
+          ],
+        },
+        {
+          t: 'जडात्मकं',
+          m: 'of the nature of insentiency',
+          parts: [
+            { t: 'जड', m: 'insentient' },
+            { t: 'आत्मकं', m: 'of the nature of' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'अवस्थात्रयमन्वेति',
+          m: 'attains the three states',
+          parts: [
+            { t: 'अवस्थात्रयं', m: 'the three states' },
+            { t: 'अन्वेति', m: 'attains' },
+          ],
+        },
+        { t: 'जायते', m: 'is born' },
+        { t: 'म्रियते', m: 'dies' },
+        { t: 'तथा', m: 'similarly' },
+        { t: '॥ १२ ॥' },
+      ],
+    ],
+    transliteration:
+      'mano ’haṃkṛty-upādānaṃ liṃgam ekaṃ jaḍātmakaṃ |\navasthā-trayam anveti jāyate mriyate tathā || 12 ||',
+    translation:
+      'The subtle body which is the material cause of the mind and egoism is one and of the nature of insentiency. It moves in the three states and is born and it dies.',
+  },
+  {
+    number: 13,
+    lines: [
+      [
+        {
+          t: 'शक्तिद्वयं',
+          m: 'two powers',
+          parts: [
+            { t: 'शक्ति', m: 'power' },
+            { t: 'द्वयं', m: 'two' },
+          ],
+        },
+        { t: 'हि', m: 'without doubt' },
+        { t: 'मायाया', m: 'of Māyā' },
+        {
+          t: 'विक्षेपावृतिरूपकं',
+          m: 'of the nature of projecting (creating) and veiling',
+          parts: [
+            { t: 'विक्षेप', m: 'projecting' },
+            { t: 'आवृति', m: 'veiling' },
+            { t: 'रूपकं', m: 'of the nature of' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'विक्षेपशक्तिर्लिंगादि',
+          m: 'the projecting power, from the subtle body',
+          parts: [
+            { t: 'विक्षेपशक्तिः', m: 'projecting power' },
+            { t: 'लिंग', m: 'subtle body' },
+            { t: 'आदि', m: 'from, beginning with' },
+          ],
+        },
+        {
+          t: 'ब्रह्माण्डांतं',
+          m: 'to the (gross) universe',
+          parts: [
+            { t: 'ब्रह्माण्ड', m: 'universe' },
+            { t: 'अंतं', m: 'up to' },
+          ],
+        },
+        {
+          t: 'जगत्सृजेत्',
+          m: 'creates the world',
+          parts: [
+            { t: 'जगत्', m: 'world' },
+            { t: 'सृजेत्', m: 'creates' },
+          ],
+        },
+        { t: '॥ १३ ॥' },
+      ],
+    ],
+    transliteration:
+      'śakti-dvayaṃ hi māyāyā vikṣepāvṛti-rūpakaṃ |\nvikṣepa-śaktir liṃgādi brahmāṇḍāntaṃ jagat sṛjet || 13 ||',
+    translation:
+      'Two powers, undoubtedly, are predicated of Māyā, viz., those of projecting and veiling. The projecting power creates everything from the subtle body to the gross universe.',
+  },
+  {
+    number: 14,
+    lines: [
+      [
+        {
+          t: 'सृष्टिर्नाम',
+          m: 'creation is called',
+          parts: [
+            { t: 'सृष्टिः', m: 'creation' },
+            { t: 'नाम', m: 'is called' },
+          ],
+        },
+        {
+          t: 'ब्रह्मरूपे',
+          m: 'of the nature of Brahman',
+          parts: [
+            { t: 'ब्रह्म', m: 'Brahman' },
+            { t: 'रूपे', m: 'of the nature of' },
+          ],
+        },
+        {
+          t: 'सच्चिदानंदवस्तुनि',
+          m: 'in the entity which is Existence-Consciousness-Bliss',
+          parts: [
+            { t: 'सत्', m: 'existence' },
+            { t: 'चित्', m: 'consciousness' },
+            { t: 'आनंद', m: 'bliss' },
+            { t: 'वस्तुनि', m: 'in the entity' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        { t: 'अब्धौ', m: 'in the ocean' },
+        {
+          t: 'फेनादिवत्सर्वनामरूपप्रसारणा',
+          m: 'the manifesting of all names and forms, like foams etc.',
+          parts: [
+            { t: 'फेनादिवत्', m: 'like foams etc.' },
+            { t: 'सर्व', m: 'all' },
+            { t: 'नाम', m: 'names' },
+            { t: 'रूप', m: 'forms' },
+            { t: 'प्रसारणा', m: 'manifesting' },
+          ],
+        },
+        { t: '॥ १४ ॥' },
+      ],
+    ],
+    transliteration:
+      'sṛṣṭir nāma brahma-rūpe sac-cid-ānanda-vastuni |\nabdhau phenādivat sarva-nāma-rūpa-prasāraṇā || 14 ||',
+    translation:
+      'The manifesting of all names and forms in the entity which is Existence-Consciousness-Bliss and which is the same as Brahman, like the foams etc. in the ocean, is known as creation.',
+  },
+  {
+    number: 15,
+    lines: [
+      [
+        {
+          t: 'अंतर्दृग्दृश्ययोर्भेदं',
+          m: 'within, the distinction between the seer and the seen',
+          parts: [
+            { t: 'अंतः', m: 'within' },
+            { t: 'दृग्दृश्ययोः', m: 'between the seer and the seen' },
+            { t: 'भेदं', m: 'distinction' },
+          ],
+        },
+        {
+          t: 'बहिश्च',
+          m: 'outside, also',
+          parts: [
+            { t: 'बहिः', m: 'outside' },
+            { t: 'च', m: 'also' },
+          ],
+        },
+        {
+          t: 'ब्रह्मसर्गयोः',
+          m: 'between Brahman and the created universe',
+          parts: [
+            { t: 'ब्रह्म', m: 'Brahman' },
+            { t: 'सर्गयोः', m: 'between … and the created universe' },
+          ],
+        },
+        { t: '।' },
+      ],
+      [
+        {
+          t: 'आवृणोत्यपरा',
+          m: 'conceals the other (power)',
+          parts: [
+            { t: 'आवृणोति', m: 'conceals' },
+            { t: 'अपरा', m: 'the other' },
+          ],
+        },
+        {
+          t: 'शक्तिस्सा',
+          m: 'this power',
+          parts: [
+            { t: 'शक्तिः', m: 'power' },
+            { t: 'सा', m: 'this' },
+          ],
+        },
+        { t: 'संसारस्य', m: 'of the phenomenal universe' },
+        { t: 'कारणम्', m: 'cause (is)' },
+        { t: '॥ १५ ॥' },
+      ],
+    ],
+    transliteration:
+      'antar-dṛg-dṛśyayor bhedaṃ bahiś ca brahma-sargayoḥ |\nāvṛṇoty aparā śaktis sā saṃsārasya kāraṇam || 15 ||',
+    translation:
+      'The other power (of Māyā) conceals the distinction between the perceiver and the perceived objects which are cognized within the body as well as the distinction between Brahman and the phenomenal universe which is perceived outside (one’s own body). This power is the cause of the phenomenal universe.',
+  },
 ]
