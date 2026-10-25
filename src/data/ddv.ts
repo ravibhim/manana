@@ -713,6 +713,8 @@ export const VERSES: Verse[] = [
       'mano ’haṃkṛty-upādānaṃ liṃgam ekaṃ jaḍātmakaṃ |\navasthā-trayam anveti jāyate mriyate tathā || 12 ||',
     translation:
       'The subtle body which is the material cause of the mind and egoism is one and of the nature of insentiency. It moves in the three states and is born and it dies.',
+    recitation: { src: '/audio/ddv-12-recitation.mp3', videoId: 'ASH1rD2jOXk', start: 1871, end: 1900 },
+    commentary: { src: '/audio/ddv-12-commentary.mp3', videoId: 'ASH1rD2jOXk', start: 1900, end: 3041 },
   },
   {
     number: 13,
