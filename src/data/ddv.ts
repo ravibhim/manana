@@ -774,6 +774,8 @@ export const VERSES: Verse[] = [
       'śakti-dvayaṃ hi māyāyā vikṣepāvṛti-rūpakaṃ |\nvikṣepa-śaktir liṃgādi brahmāṇḍāntaṃ jagat sṛjet || 13 ||',
     translation:
       'Two powers, undoubtedly, are predicated of Māyā, viz., those of projecting and veiling. The projecting power creates everything from the subtle body to the gross universe.',
+    recitation: { src: '/audio/ddv-13-recitation.mp3', videoId: 'AiDa_7Blimg', start: 461, end: 491 },
+    commentary: { src: '/audio/ddv-13-commentary.mp3', videoId: 'AiDa_7Blimg', start: 492, end: 1388 },
   },
   {
     number: 14,
